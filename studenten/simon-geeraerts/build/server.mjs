@@ -6,7 +6,7 @@ import { collectionNotice } from "./notices.mjs";
 
 const port = Number(process.env.PORT ?? 3000);
 const apiKey = process.env.OPENAI_API_KEY;
-const model = process.env.OPENAI_MODEL ?? "gpt-5.6-terra";
+const model = process.env.OPENAI_MODEL ?? "gpt-6-luna";
 const publicDir = new URL("./public/", import.meta.url);
 const orderDataFile = new URL("./data/bestellingen.xlsx", import.meta.url);
 let lastModified = null;
@@ -94,7 +94,7 @@ async function createAnswer(question, order) {
       order.expectedArrival === "Nog niet bekend"
         ? "De verwachte aankomstdatum bij de garage is nog niet bekend."
         : `De verwachte aankomst bij de garage is ${order.expectedArrival}.`,
-      collectionNotice(order.expectedArrival)
+      collectionNotice(order.expectedArrival, question)
     ].filter(Boolean).join("\n\n");
   }
 
@@ -125,10 +125,15 @@ async function createAnswer(question, order) {
 
   if (!response.ok) throw new Error(`De AI-dienst gaf fout ${response.status}.`);
   const data = await response.json();
-  const answer = data.output_text?.trim();
+  const answer = [
+    data.output_text,
+    ...(data.output ?? []).flatMap((item) => (item.content ?? [])
+      .filter((content) => content.type === "output_text")
+      .map((content) => content.text))
+  ].filter(Boolean).join("\n").trim();
   if (!answer) throw new Error("De AI-dienst gaf geen bruikbaar antwoord.");
-  const notice = collectionNotice(order.expectedArrival);
-  return notice ? `${answer}\n\n${notice}` : answer;
+  const notice = collectionNotice(order.expectedArrival, question);
+  return [answer, notice].filter(Boolean).join("\n\n");
 }
 
 const server = createServer(async (request, response) => {
@@ -140,10 +145,10 @@ const server = createServer(async (request, response) => {
         return send(response, 400, { error: fromGarage("stel eerst je vraag over de bestelling.") });
       }
       if (typeof orderNumber !== "string" || !orderNumber.trim()) {
-        return send(response, 200, { answer: fromGarage("mag ik uw bestelbonnummer van vijf cijfers, alstublieft? Vindt u dit nummer niet terug, neem dan contact op met Ford Geeraerts.") });
+        return send(response, 200, { answer: fromGarage("om de status van uw wagen te kunnen nakijken, heb ik eerst uw bestelbonnummer nodig. Dit nummer bestaat uit 5 cijfers. Bezorg mij uw bestelbonnummer. Daarna vraag ik ook naar de naam waarop de wagen besteld is, zodat ik de juiste bestelgegevens kan nakijken.") });
       }
       if (!isValidOrderNumber(orderNumber)) {
-        return send(response, 400, { error: fromGarage("een bestelbonnummer bestaat uit precies vijf cijfers.") });
+        return send(response, 400, { error: fromGarage("het bestelbonnummer moet uit 5 cijfers bestaan. Controleer het nummer en probeer het opnieuw. Als u het juiste bestelbonnummer niet kunt terugvinden, neem dan contact op met Ford Geeraerts.") });
       }
       if (typeof buyerName !== "string" || !buyerName.trim()) {
         return send(response, 200, { answer: fromGarage("dank je. Op welke naam staat de wagen besteld?") });

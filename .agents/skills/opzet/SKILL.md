@@ -82,7 +82,7 @@ Eén regel voor de hele cursus: de student komt alleen aan de eigen map. Niet aa
 
 ## 6. Contextbestand
 
-Volg `.claude/skills/context/SKILL.md` (raw: https://raw.githubusercontent.com/alexandernacho/advanced-ai-nl/main/.claude/skills/context/SKILL.md). Die skill interviewt de student en schrijft `studenten/<naam>/context.md`. Kom daarna hier terug.
+Volg `.claude/skills/profiel/SKILL.md` (raw: https://raw.githubusercontent.com/alexandernacho/advanced-ai-nl/main/.claude/skills/profiel/SKILL.md). Die skill interviewt de student en schrijft `studenten/<naam>/context.md`. Kom daarna hier terug.
 
 ## 7. Sleutels
 

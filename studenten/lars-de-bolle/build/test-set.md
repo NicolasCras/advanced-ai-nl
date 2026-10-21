@@ -80,7 +80,7 @@ Een post missen is F3. Een post te veel is F2. Een juiste post met het verkeerde
 aantal of de verkeerde eenheid is F1. Een ontbrekende correctie is F3, want het
 model heeft iets gezien en niet gemeld.
 
-## Uitslag: 22 op 24 juist (n = 12, 2 runs)
+## Uitslag op v2b: 22 op 24 juist (n = 12, 2 runs)
 
 | Klasse | Aantal |
 |---|---|
@@ -93,20 +93,31 @@ model heeft iets gezien en niet gemeld.
 
 Eén echte fout, twee keer gemaakt.
 
-## Na de ene wijziging: T02 twee keer opnieuw
+## Runs op v3
 
 | ID | v2b, run 1 | v2b, run 2 | v3, run A | v3, run B |
 |---|---|---|---|---|
 | T02 | FOUT, F2 | FOUT, F2 | JUIST | JUIST |
+| T11 | JUIST | JUIST | JUIST | niet gedraaid |
+
+**Op v3: 3 op 3 juist (n = 2).** T02 twee keer, T11 een keer. Dat is een klein
+getal naast de 22 op 24 van v2b, en het zegt niets over de tien inputs die ik
+niet opnieuw gedraaid heb.
+
+T11 op v3 liep op 16 oktober, met `materialenlijst.csv` expliciet in hetzelfde
+bericht in plaats van alleen in de prompt. Zeven posten exact, 13,5 m2, de
+correctie over 3 op 4,5, wandtegels op aantal 0 met bron `eigen`, kraan op
+`open`, en de vraag over de wand-m2. Dezelfde run leverde de kostenmeting in
+`kosten.md`.
 
 v3 geeft één post Schilderwerk 2 lagen (m2, 0, 16,50, eigen), geen lichtpuntpost
 meer, en twee vragen waarvan de tweede precies de goede is: gaat die belichting
 over een lichtpunt, een armatuur of een hele kring?
 
-**Dit is geen 24 op 24.** Alleen T02 is op v3 gedraaid. De andere elf inputs
-liepen op v2b en zijn niet opnieuw gemeten, dus ik weet niet of de wijziging daar
-iets stuk heeft gemaakt. Wat ik weet: de fout die ik vond is weg, twee keer op
-twee.
+**Dit is geen 24 op 24.** Alleen T02 en T11 zijn op v3 gedraaid. De andere tien
+inputs liepen op v2b en zijn niet opnieuw gemeten, dus ik weet niet of de
+wijziging daar iets stuk heeft gemaakt. Wat ik weet: de fout die ik vond is weg,
+twee keer op twee, en T11 bleef juist na de wijziging.
 
 Zie `log.md` voor welke bouwsteen fout was, en voor een onzuiverheid in de
 versies waarop de runs liepen.

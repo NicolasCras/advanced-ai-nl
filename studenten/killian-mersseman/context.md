@@ -12,6 +12,7 @@
 - Volledigheid gaat voor beknoptheid: liever een volledig antwoord dan een half antwoord.
 - Geef altijd duidelijke, genummerde instructies over wat ik nu moet doen, met concrete bestanden of tekst waar nodig. Vermeld de eerstvolgende stap expliciet.
 - Bij rapporttests: voeg meerdere bronbestanden voor hetzelfde bedrijf samen tot één PDF, met behoud van de oorspronkelijke pagina’s en herkenbare brononderdelen.
+- Bij bedrijfsupdates: zoek en download zelf het recentste officiële kwartaalrapport voor het volgende bedrijf; vraag mij niet telkens het rapport te uploaden. Werk één bedrijf per keer af en bewaar de bron en publicatiedatum.
 
 ## Wat ik al kan
 - Git: geen eerdere ervaring; voor het eerst gebruikt tijdens deze opzet.

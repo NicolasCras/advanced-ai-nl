@@ -1,4 +1,4 @@
-# Week 1 — Het weet nu wie ik ben
+# Week 1: Het weet nu wie ik ben
 
 ## Wat heb ik tot nu toe met AI gedaan?
 ChatGPT voor samenvattingen van cursussen en om mails naar klanten netter te maken. Eén keer geprobeerd om er een Excel-formule mee te schrijven; die werkte niet en ik heb het opgegeven.

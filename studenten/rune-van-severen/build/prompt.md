@@ -44,5 +44,5 @@ Antwoord: {"geslacht": "vrouw", "lichaamsgewicht": "74 kg", "squat": "140 kg", "
 Het bericht:
 
 <bericht>
-{BERICHT}
+I'm a 79.4 kg male. Squat 190 kg, bench 125 kg, deadlift 230 kg. Total 545 kg.
 </bericht>

@@ -13,6 +13,9 @@
 | 2026-10-13 | Run 1 (T03, T05, T06, T09, T10): 4 op 5 juist (n = 5, 1 run). Fout: T10 = F3 (gemist), `12X12` niet gelezen als 12 kg x 12 reps. | week 3 |
 | 2026-10-13 | Eén wijziging (bouwsteen 2, regel): `A x B` zonder apart gewicht in kg = gewicht x reps; zijn A en B gelijk (`12X12`), neem ze allebei over. Reden: T10 faalde met F3. Oude prompt bewaard als `prompt-v1.md`. Nog te draaien: T10 en T06 (kan raken). | week 3 |
 | 2026-10-13 | Na de wijziging T10 en T06 opnieuw gedraaid (nieuw gesprek). T10: `spidercurl \| 3 \| 12 \| 12 \| ? \| ? \| armday`, juist (reps en gewicht goed, `armday` in notitie vind ik niet erg). T06: zelfde als Run 1, juist (de voorwaarde "zonder apart gewicht in kg" houdt hem heel). T03, T05, T09 niet opnieuw gedraaid. Eén run, dus nog geen bewijs. | week 3 |
+| 2026-10-20 | Kostenmeting: één run (prompt + T01) met Haiku 5.5. Hele run $0,0061, mijn deel $0,00096. Zie `kosten.md`. `/context` startte de skill `context`, dus context benaderd met `/cost`. | week 4 |
+| 2026-10-20 | Run 3: alle tien inputs met v2, Haiku 5.5 (`claude -p --model haiku`), elke input een eigen run. 9 op 10 juist (n = 10, 1 run). Fout: T02 = F3 (lopen niet herkend, 5 en 36 in notitie). T10 slaagt nu. | week 4 |
+| 2026-10-20 | `build/README.md` gemaakt. | week 4 |
 
 ## Nog te doen
 - [x] Het *want* bij de regel `geen training` in `prompt.md` zetten.

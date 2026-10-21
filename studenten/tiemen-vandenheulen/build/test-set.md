@@ -18,3 +18,20 @@ Schrijf het juiste antwoord en waarom **vóór** je de tool test. De antwoorden 
 ## Resultaat
 
 _Getest: review 2 was juist in v1. Review 8 was fout in v1 en juist na de aanpassing in v2._
+
+## V2-test — 20 oktober 2026
+
+| Nr. | Uitkomst v2 | Beoordeling | Foutklasse |
+|---|---|---|---|
+| 1 | `organisatie, sfeer` | juist | |
+| 2 | `organisatie, sfeer, wachttijden` | fout: extra `sfeer` | F1 |
+| 3 | `sfeer` | juist | |
+| 4 | `organisatie` | juist | |
+| 5 | `organisatie, locatie` | fout: extra `organisatie` | F1 |
+| 6 | `andere` | juist | |
+| 7 | `andere` | juist | |
+| 8 | `sfeer` | juist | |
+| 9 | `andere` | juist | |
+| 10 | `andere` | juist | |
+
+**Resultaat v2: 8 op 10 juist (n = 10, 1 run).** De twee F1-fouten zijn extra labels bij dubbelzinnige reviews.

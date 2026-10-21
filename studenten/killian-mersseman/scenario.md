@@ -1,0 +1,7 @@
+# Mijn scenario
+
+1. **De plek:** mijn eigen beleggingsopvolging als beginnende belegger, Killian Mersseman. Ik wil ongeveer tien bedrijven elk kwartaal opvolgen. Mogelijk deel ik de verzamelde informatie ook met vrienden die daarin geïnteresseerd zijn.
+2. **De beslissing:** moet ik deze tool gebruiken om elk kwartaal de financiële cijfers van ongeveer tien bedrijven te verzamelen en in Excel bij te houden voor mijn eigen beleggingsanalyses?
+3. **De lezer:** ikzelf; ik beslis of ik de tool voor mijn opvolging blijf gebruiken. Mijn vrienden zijn mogelijke aanvullende lezers van de informatie.
+4. **Waarom het ertoe doet:** handmatig verzamelen, noteren en controleren schat ik op 60 minuten per bedrijfsupdate, tegenover 15 minuten met de tool. Bij 40 updates per jaar is het verschil 30 uur, persoonlijk gewaardeerd op €150 vóór toolkosten. Handmatig werk zou ten koste gaan van trainingen en familietijd. Mijn eigen analyses vallen buiten deze tijden; betere beleggingsresultaten zijn een verwachting, geen gemeten opbrengst. Welk concreet financieel gevolg foutieve informatie voor mij of bij delen met vrienden kan hebben, heb ik nog niet in omvang bepaald.
+5. **Wat ik nog moet uitzoeken:** de kost van één run met de nieuwe werkwijze; de betrouwbaarheid van de nieuwe prompt over meerdere rapporten; of ik de opvolging consequent genoeg volhoud voor 40 updates per jaar; hoe ik eventuele fouten en beperkingen zichtbaar maak als ik informatie met vrienden deel. De precieze vorm en frequentie van dat delen liggen nog niet vast.

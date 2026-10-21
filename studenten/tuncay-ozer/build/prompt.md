@@ -36,4 +36,4 @@ Bericht: gewogen 78,4 gisteren 77,9 ik snap mijn lichaam ni
 geen training
 
 Bericht:
-<BERICHT>
+inc db 36 x 6

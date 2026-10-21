@@ -12,11 +12,13 @@ This tool classifies an Outlook message into exactly one category:
 ## Status
 
 - v0: task and four labels defined on 2026-09-24.
-- v1: a fixed classifier prompt; ready for its first test run.
+- v1: first fixed classifier prompt.
+- v2: added a reason to the Canvas-report rule, an explicit fallback for unclear emails, and three examples.
+- v3: current prompt; also distinguishes an optional recommendation from a required action.
 
 ## How to use it
 
-Open `classifier-prompt.md` in Codex. Paste one test email into the `EMAIL` section. For a possible duplicate, paste the original email into `EARLIER EMAIL`. The response must be one JSON object containing one label.
+Open `classifier-prompt-v3.md` in Codex. Paste one test email into the `EMAIL` section. For a possible duplicate, paste the original email into `EARLIER EMAIL`. The response must be one JSON object containing one label.
 
 ## Duplicate rule
 
@@ -28,6 +30,8 @@ The first copy of an email receives its normal label (`doen`, `lezen`, or `neger
 | --- | --- | --- | --- |
 | v0 | 2026-09-24 | Defined the task and its four labels. | The output must be limited and checkable before testing. |
 | v1 | 2026-09-24 | Added a fixed classification prompt with JSON output. | The tool needs a repeatable, checkable first version before measuring it. |
+| v2 | 2026-10-14 | Added a reason for the Canvas rule, an uncertainty fallback, and examples. | The v1 audit showed that examples and a clear fallback were missing. |
+| v3 | 2026-10-14 | Added a rule and example for optional recommendations with an explicit alternative. | v2 classified T01 as `doen` even though the laptop was optional. |
 
 ## v1 first measurement
 

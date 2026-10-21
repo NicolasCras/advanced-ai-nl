@@ -23,21 +23,25 @@ Na de wijziging (v2): T05 opnieuw gedraaid → `negeren`, juist (n = 1, 1 run).
 
 ## Alle tien met v2
 
-Dezelfde prompt (v2) voor alle tien, elke input in een nieuw tijdelijk gesprek. T06–T10 komen uit Run 1 hierboven. T01–T05 opnieuw gedraaid op 13 oktober.
+Dezelfde prompt (v2) voor alle tien, elke input in een nieuw tijdelijk gesprek. T06–T10 komen uit Run 1 hierboven. T01–T05 opnieuw gedraaid op 13 oktober. Run 2 op 20 oktober. Alle runs in de Claude-app met Opus 5.5.
 
-| ID | Juiste antwoord | v2, run 1 | Fout |
-|---|---|---|---|
-| T01 | info | info | |
-| T02 | negeren | negeren | |
-| T03 | later | later | |
-| T04 | later | later | |
-| T05 | negeren | negeren | |
-| T06 | negeren | negeren | |
-| T07 | dringend | later | F1 |
-| T08 | later | later | |
-| T09 | onzeker | onzeker | |
-| T10 | negeren | negeren | |
+| ID | Juiste antwoord | v2, run 1 | v2, run 2 | Fout |
+|---|---|---|---|---|
+| T01 | info | info | info |  |
+| T02 | negeren | negeren | negeren |  |
+| T03 | later | later | later |  |
+| T04 | later | later | later |  |
+| T05 | negeren | negeren | negeren |  |
+| T06 | negeren | negeren | negeren |  |
+| T07 | dringend | later | later | F1, 2× |
+| T08 | later | later | later |  |
+| T09 | onzeker | onzeker | onzeker |  |
+| T10 | negeren | negeren | negeren |  |
 
-Resultaat v2: 9 op 10 juist (n = 10, 1 run). Fout: T07, F1.
+Resultaat v2, run 1: 9 op 10 juist (n = 10, 1 run). Fout: T07, F1.
+
+Resultaat v2, run 2 (20 oktober, Opus 5.5): 9 op 10 juist. Fout: T07, F1.
+
+**Resultaat v2, totaal: 18 op 20 juist (n = 10, 2 runs). Fouten: 2× F1, allebei T07. Geen F6: elke input gaf twee keer hetzelfde label.**
 
 T05 met v2 twee keer gedraaid: twee keer `negeren`.

@@ -7,7 +7,7 @@ Dit is de cursusrepo van "Advanced AI for Business" (Nederlandstalige groep, Art
 ## Lees eerst
 - Studenten openen hun tool normaal in `studenten/<naam>/`. Daar staat een `CLAUDE.md` en een `AGENTS.md` die `context.md` inladen. Zit je daar, dan is dit al gebeurd.
 - Zit je in de hoofdmap? Vraag de naam van de student en lees `studenten/<naam>/context.md` voor je iets doet.
-- Bestaat `context.md` niet? Gebruik de skill `context`.
+- Bestaat `context.md` niet? Gebruik de skill `profiel`.
 
 ## Regels
 1. Wijzig alleen bestanden in `studenten/<naam>/` van de gebruiker. Nooit in `cursus/`, nooit in de map van een andere student. Ook niet om een typfout te verbeteren: meld het aan de docent. Lees ook geen bestanden in de map van een andere student, tenzij de student daar zelf om vraagt.
@@ -22,7 +22,7 @@ Elke skill is een gewoon markdownbestand. Lees het en volg de stappen, welke too
 De skills staan twee keer: in `.claude/skills/` (Claude Code, `/week`) en in `.agents/skills/` (Codex, `$week`). De bron is `.claude/skills/`. `.agents/skills/` is een kopie: `node scripts/sync-skills.mjs`.
 
 - `.claude/skills/opzet/SKILL.md` — opzet in week 1: tool, git, fork, clone, eigen map, context, push, pull request.
-- `.claude/skills/context/SKILL.md` — interviewt de student en schrijft `context.md`.
+- `.claude/skills/profiel/SKILL.md` — interviewt de student en schrijft `context.md`.
 - `.claude/skills/week/SKILL.md` — `start week N` (pull upstream, weekbranch) en `dien week N in` (commit eigen map, push, pull request).
 - `.claude/skills/brainstorm/SKILL.md` — van een vaag idee naar één keuze. Algemeen bruikbaar, ook buiten de cursus.
 

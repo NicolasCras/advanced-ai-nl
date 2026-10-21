@@ -23,3 +23,27 @@ Runs: prompt v1, Claude Sonnet (`claude -p --model sonnet`), elke run een nieuw 
 
 **Resultaat Run 1:** 4 op 5 juist (n = 5, 1 run: T03, T05, T06, T09, T10).
 Fouten: T10 = F3 (gemist): reps 12 en gewicht 12 stonden in `12X12`, het model zette `?` en `12X12` in notitie.
+
+## Run 3: alle tien, 20 oktober 2026
+
+Huidige prompt (`prompt.md`, met de regel voor `12X12`), Claude Haiku 5.5 (`claude -p --model haiku`), elke input een eigen run, gedraaid vanuit een lege map zonder `CLAUDE.md` of `context.md`.
+
+| ID | Uitkomst | Oordeel |
+|---|---|---|
+| T01 | inc dumbbell \| ? \| 6 \| 36 \| ? \| ? \| ? | juist |
+| T02 | ? \| ? \| ? \| ? \| ? \| ? \| 5km in 36min | **fout, F3** |
+| T03 | ? \| ? \| ? \| ? \| ? \| ? \| chestday, niet optimaal | juist |
+| T04 | ? \| ? \| ? \| ? \| ? \| ? \| chestday, borst niet gevoeld | juist |
+| T05 | rij 1: dumbbell press \| ? \| ? \| ? \| ? \| ? \| ?<br>rij 2: cardio \| ? \| ? \| ? \| ? \| 30 \| ? | juist |
+| T06 | bench press \| 3 \| 5 \| 80 \| ? \| ? \| vorige week 77,5, progressie | juist |
+| T07 | deadlift \| ? \| 3 \| 140 \| ? \| ? \| rug deed raar dus gestopt, morgen rust | juist |
+| T08 | pull ups \| ? \| 8 \| ? \| ? \| ? \| 8 aan een stuk, begin dit jaar 2 | juist |
+| T09 | lopen \| ? \| ? \| ? \| 5 \| 32 \| 6:28/km, laatste 1.5 km zwaar | juist |
+| T10 | spidercurl \| 3 \| 12 \| 12 \| ? \| ? \| arm day | juist |
+
+Kleine verschillen in de naam (bv. "pull ups" of "pullups") of extra woorden in `notitie` tellen niet als fout.
+
+**Resultaat Run 3:** 9 op 10 juist (n = 10, 1 run).
+Fouten: T02 = F3 (gemist): het model zag niet dat het om lopen ging en zette 5 en 36 in `notitie` in plaats van in afstand en tijd. T02 gaf in run 2 wel het juiste antwoord, dus de tool doet het niet altijd hetzelfde.
+
+T10 slaagt nu: de regel voor `12X12` werkt.

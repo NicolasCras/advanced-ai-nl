@@ -1,10 +1,12 @@
-# Taak — Leveranciersproduct screenen voor bol.com
+# Taak — Leveranciersproduct screenen voor Vinted
 
-- **Taak:** een productpagina van een leverancier (bv. Alibaba) checken of het product veilig in te kopen is om door te verkopen op bol.com.
+- **Taak:** een productpagina van een leverancier (AliExpress, Alibaba of DHgate) checken of het product veilig in te kopen is om door te verkopen op Vinted.
 - **Wat erin gaat:** de tekst van één productpagina (titel, beschrijving, specificaties), geplakt bij een promptbestand.
-- **Wat eruit komt:** `GO` / `NO-GO` / `ONZEKER`. Bij `NO-GO`: welke risico's (A: namaak/merk, B: wettelijke eisen, C: moeilijk te verzenden, D: verboden/beperkt op bol.com) en per risico een citaat van de pagina. Eén risico is genoeg voor `NO-GO`. Geen CE vermeld waar dat verplicht is = `NO-GO`. Uitweg: `ONZEKER` als de pagina te weinig info geeft om te weten wat het product is.
+- **Wat eruit komt:** `GO` / `NO-GO` / `ONZEKER`. Bij `NO-GO`: welke risico's (A: namaak/merk, B: wettelijke eisen, C: moeilijk te verzenden, D: verboden/beperkt op Vinted) en per risico een citaat van de pagina. Eén risico is genoeg voor `NO-GO`. Geen CE vermeld waar dat verplicht is = `NO-GO`. Uitweg: `ONZEKER` als de pagina te weinig info geeft om te weten wat het product is.
 - **Soort AI:** een taalmodel. Er gaat tekst in, er komt een label met een reden uit. Geen voorspelling uit cijfers, geen vaste regel die alles vangt.
 - **Checken of het juist is:** vooraf per pagina het juiste label en de risico's opschrijven. Achteraf checken of het label klopt en of elk citaat echt op de pagina staat. Staat een citaat er niet, dan is dat een verzonnen detail (F2).
+
+**Gewijzigd op 14 oktober 2026 (week 4):** eerst bol.com en Alibaba, nu Vinted en AliExpress, Alibaba of DHgate. Reden: ik verkoop al op Vinted, met producten van AliExpress. Nog te doen: de regels van Vinted opzoeken (wat is daar verboden of beperkt?), en daarna risico D in `prompt.md` en de juiste antwoorden in `test-set.md` aanpassen.
 
 ## Vijf inputideeën
 

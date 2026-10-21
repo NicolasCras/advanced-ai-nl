@@ -26,7 +26,7 @@ Velden:
   - "Full set" of "Full-Set" alleen telt niet als doos of papieren, want het zegt niet welke onderdelen erbij zitten. Tel alleen een doos, garantiekaart of certificaat die apart genoemd worden.
 - "vraagprijs": het bedrag als getal, zonder punten of munt, bv. 12500.
 - "munt": de munt, bv. "EUR", "CHF", "USD".
-- "verkoper": precies één van "particulier", "handelaar".
+- "verkoper": precies één van "particulier", "handelaar", "onbekend".
 - "servicegeschiedenis": een korte zin met wat er staat over service of revisie, bv. "revisie bij Rolex in 2022".
 
 Regels:

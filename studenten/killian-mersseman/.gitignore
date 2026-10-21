@@ -1,0 +1,5 @@
+# Lokale previews en technische inspectie van het Excel-bestand.
+outputs/kwartaalopvolging/*.png
+outputs/kwartaalopvolging/*.inspect.ndjson
+outputs/kwartaalopvolging/*.tmp.xlsx
+outputs/kwartaalopvolging/~$*.xlsx

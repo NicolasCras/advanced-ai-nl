@@ -36,3 +36,24 @@ T06–T10: juiste antwoorden zelf beslist vóór de run. Inputs gezocht door Cla
 
 Regel toegevoegd: "Verkoopt of plaatst het bedrijf alleen producten die ergens anders gemaakt worden? Dan "nee", want het koopt zelf geen hout."
 T07 opnieuw, 2 runs met v2: `nee` · `nee` ✅ ✅. Nog geen bewijs: 1 input, 2 runs, en de andere 9 nog niet opnieuw gedraaid met v2.
+
+## Week 4 — run met v2, alle tien
+
+14 oktober 2026, Claude Sonnet 5.5 via `claude -p --output-format json`, nieuw gesprek per run, geen tools. Formaat: doelgroep · lead.
+
+| ID | Juist | Run 1 | Run 2 |
+|---|---|---|---|
+| T01 | ja · ja | ja · ja ✅ | ja · ja ✅ |
+| T02 | ja · geen e-mail | ja · geen e-mail ✅ | ja · geen e-mail ✅ |
+| T03 | nee · nee | nee · nee ✅ | nee · nee ✅ |
+| T04 | ja · geen e-mail | ja · geen e-mail ✅ | ja · geen e-mail ✅ |
+| T05 | ja · ja | ja · ja ✅ | ja · ja ✅ |
+| T06 | nee · nee | nee · nee ✅ | nee · nee ✅ |
+| T07 | nee · nee | ja · ja ❌ F1 | ja · ja ❌ F1 |
+| T08 | nee · nee | nee · nee ✅ | nee · nee ✅ |
+| T09 | ja · geen e-mail | ja · geen e-mail ✅ | ja · geen e-mail ✅ |
+| T10 | nee · nee | nee · nee ✅ | nee · nee ✅ |
+
+**Resultaat v2: 18 op 20 juist (n = 10, 2 runs).** F1: 2 (beide T07). F2: 0.
+T07 met exact dezelfde v2-prompt: op 8 oktober 2× `nee`, op 14 oktober 2× `ja`. Dat is F6 over sessies heen: de wijziging van week 3 hield geen stand.
+Reden van de tool beide keren: "eigen studio en workshop in Brussel". Precies wat de buurtest al zei: "workshop" bewijst niet dat ze zelf hout verwerken.

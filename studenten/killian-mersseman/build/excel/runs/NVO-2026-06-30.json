@@ -1,0 +1,52 @@
+{
+  "records": [
+    {
+      "ticker": "NVO",
+      "metric": "FCF",
+      "start": "2026-04-01",
+      "end": "2026-06-30",
+      "period_type": "Kwartaal",
+      "value": 42524,
+      "currency": "DKK",
+      "method": "Gerapporteerd",
+      "definition": "Net cash generated from operating activities minus Purchase of property, plant and equipment; definitie vanaf 2026",
+      "source": "NVO-2026-06-30.pdf",
+      "page": "Gedrukte en pdf-p. 37, Appendix 7 — Free cash flow; hoofdwaarde ook p. 3",
+      "evidence": "Alle componenten miljoen DKK, Q2 2026: operationele kasstroom 55.199 minus aankopen materiële vaste activa 12.675 = gerapporteerde FCF 42.524. Geen valuta- of schaalomrekening nodig.",
+      "status": "Nog te controleren",
+      "note": "Kwartaalbedrag, geen halfjaar. Vanaf 2026 gewijzigde FCF-definitie; vergelijkende cijfers in dit rapport zijn herzien. Rente ontvangen en betaald zijn vanaf 2026 anders in de kasstroomstaat ingedeeld (p. 27). Definitie en renteclassificatie controleren vóór vergelijking met eerdere rapporten of andere bedrijven."
+    },
+    {
+      "ticker": "NVO",
+      "metric": "Schuld",
+      "start": null,
+      "end": "2026-06-30",
+      "period_type": "Peildatum",
+      "value": 140127,
+      "currency": "DKK",
+      "method": "Berekend",
+      "definition": "Balansboekwaarde niet-kortlopende plus kortlopende Borrowings, inclusief leaseverplichtingen; geen aftrek kasmiddelen",
+      "source": "NVO-2026-06-30.pdf",
+      "page": "Gedrukte en pdf-p. 28, Appendix 3 — Condensed balance sheet; p. 37, Appendix 7 — Net debt; p. 14 — Bonds",
+      "evidence": "Miljoen DKK: niet-kortlopende Borrowings 121.794 + kortlopende Borrowings 18.333 = 140.127. De aansluiting op p. 37 identificeert 8.622 leaseverplichtingen binnen Borrowings. Zonder alle leases: 140.127 - 8.622 = 131.505. Kasgeld 44.482 en effecten 500 zijn niet afgetrokken.",
+      "status": "Onzeker",
+      "note": "Totaal Borrowings inclusief leases is uit de balans berekenbaar. Operationele leases en financiële leases: niet afzonderlijk uitgesplitst; de bron geeft alleen 8.622 totaal. Daardoor is afbakening tegenover schuld exclusief operationele leases onzeker. P. 14 geeft uitstaande obligaties in EUR en CHF, maar geen volledige coupon- en boekwaarde-uitsplitsing. Eventuele renteloze obligaties zijn niet afzonderlijk identificeerbaar en worden niet stilzwijgend uit Borrowings verwijderd. Nodig voor een striktere afbakening: lease-uitsplitsing en aansluiting per schuldinstrument. Externe bronnen niet geraadpleegd."
+    },
+    {
+      "ticker": "NVO",
+      "metric": "Omzetgroei",
+      "start": "2026-04-01",
+      "end": "2026-06-30",
+      "period_type": "Kwartaal",
+      "value": 0.02,
+      "currency": null,
+      "method": "Gerapporteerd",
+      "definition": "Gerapporteerde IFRS-kwartaalomzetgroei in DKK tegenover hetzelfde kwartaal vorig jaar, niet Adjusted en niet CER",
+      "source": "NVO-2026-06-30.pdf",
+      "page": "Gedrukte en pdf-p. 1, Profit and loss; p. 26, Appendix 1 — Condensed income statement; p. 34, Appendix 7 — Net sales at CER",
+      "evidence": "Omzet miljoen DKK: Q2 2026 78.488; Q2 2025 76.857. Gerapporteerde groei 2% (opgeslagen als 0.02). Controle: (78.488 / 76.857 - 1) x 100 = 2,122122903574164%; presentatie 2,1%. Berekend minus gerapporteerd = +0,122122903574164 procentpunt; presentatie +0,1 procentpunt.",
+      "status": "Nog te controleren",
+      "note": "Oorzaak verschil berekende en gerapporteerde groei niet expliciet vastgesteld in de bron. Groei bij constante valuta (CER) afzonderlijk 3%; Adjusted groei is een andere maatstaf en niet de hoofdwaarde. Q2 2025 bevat een 340B-provisievrijval van 2.649 miljoen DKK (p. 35); gebruik dus geen Adjusted vergelijkingsbasis voor deze IFRS-groei."
+    }
+  ]
+}

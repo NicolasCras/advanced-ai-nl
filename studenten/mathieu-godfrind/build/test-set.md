@@ -20,6 +20,9 @@ Juiste antwoord = label (`GO` / `NO-GO` / `ONZEKER`) en bij `NO-GO` de risico's 
 | T08 | Pluche Monster Energy-pop — zie T08 hieronder | NO-GO (A, B) | A: de knuffel gebruikt de naam en de look van Monster Energy, een merk van iemand anders. B: het is speelgoed en er staat geen CE. Lastige punten: de merknaam is XINLI, dus de tool kan denken dat er geen merkprobleem is. Er staat "14 Jaar & up", dus de tool kan denken dat het geen speelgoed is. En "Verantwoordelijke EU-persoon" klinkt als in orde, maar het is geen CE. | NO-GO (A, B) | |
 | T09 | LED-bureaulamp, pagina in het Frans — zie T09 hieronder | NO-GO (B) | Het is een lamp op netstroom, dus elektronica, en er staat nergens CE. Lastige punten: de pagina is in het Frans, dus de tool moet letterlijk in het Frans citeren en niet vertalen. In de titel staat "norme américaine", dat is geen CE. En "Prise: US/EU/UK" klinkt alsof het voor Europa in orde is, maar een EU-stekker is geen CE. | NO-GO (B) | |
 | T10 | Metalen sleutelhanger, korte input — zie T10 hieronder | GO | Het is een metalen sleutelhanger zonder merk van iemand anders, geen elektronica, niet breekbaar en niet verboden. Lastig punt: er staat weinig tekst, dus de tool kan ONZEKER zeggen. Maar het is wel duidelijk wat het product is en van welk materiaal, dus ONZEKER is hier fout. | GO | |
+| T11 | "Designer Frans geïnspireerde" schoudertas, DHgate — zie T11 hieronder | NO-GO (A) | De titel zegt "Designer Frans geïnspireerde schoudertas met ketting" en "luxe". Er staat geen merknaam, maar het verwijst duidelijk naar een bekende Franse luxetas. "Geïnspireerd" werkt hetzelfde als "style" in mijn regel A. Lastig punt: omdat er geen merknaam staat, kan de tool GO zeggen. Dat is net wat ik wil testen. | NO-GO (A) | NO-GO (A) |
+| T12 | Pluche "Niuniu Energy Drink"-blik, CE alleen op foto, AliExpress — zie T12 hieronder | NO-GO (B) | De pagina noemt het zelf een pluche pop, dus het is speelgoed volgens mijn regel, ook met 14+ jaar. CE staat niet in de tekst. Lastig punt: CE staat wel op een foto, maar de tool ziet alleen tekst. Dit toont een grens van mijn tool. Tweede lastig punt: "Niuniu Energy Drink blik" en "voor fans" kan verwijzen naar een bestaand merk, maar er staat geen echte merknaam, dus A tel ik niet als verplicht risico. | NO-GO (B) | NO-GO (A, B) |
+| T13 | Gotische konijnenknuffel-sleutelhanger, AliExpress — zie T13 hieronder | NO-GO (B) | Het is een grijze zone: een sleutelhanger kan decoratie zijn, maar de pagina noemt het zelf een knuffel. Bij twijfel kies ik NO-GO, want als het toch speelgoed is, mag ik het zonder CE niet verkopen. | NO-GO (B) | NO-GO (B) |
 
 ## Inputs
 
@@ -703,6 +706,83 @@ materiaal: Metaal
 plaats van herkomst: Guangdong, China
 ```
 
+### T11
+Link: https://nl.dhgate.com/product/designer-french-inspired-chain-strap-shoulder/1105429294.html
+
+```
+Titel: Gratis verzending Designer Frans geïnspireerde schoudertas met ketting - Trendy mini vierkante crossbodytas voor dames, luxe
+
+Beschrijving:
+Deze damesschoudertas is gemaakt van PU-materiaal, dat zeer licht van gewicht is, een goede elasticiteit heeft, zacht en comfortabel aanvoelt en een goede waterbestendigheid heeft.
+Deze damesschoudertas is geschikt om te matchen met verschillende kledingstijlen, de juiste kleding met een stijlvolle tas, zodat je het mooiste landschap kunt worden.
+Deze schoudertas voor dames heeft een wetenschappelijk ontwerp en voldoende ruimte in de tas voor een portemonnee voor een mobiele telefoon en meer, waardoor hij perfect is voor woon-werkverkeer.
+Welkom in mijn winkel, de productfoto's van het bedrijf zijn door een professionele fotograaf aan te passen, omdat het display anders is, de kleur kan veroorzaken, ontvang alstublieft de goederen. 100% foto... Tijdige service.
+Onze productkwaliteitsborging, de slogan van ons bedrijf is: niet het nastreven van lagere prijzen, maar het nastreven van de hoogste. Welkom in onze winkel, wij zullen u voorzien van kwaliteitsproducten en de meest voorkeur.
+
+Specificaties:
+Type: Schoudertas
+Geslacht: Dames
+Patroon: Gewoon
+Materiaal: Pu
+Gelegenheid: Daily Outfit
+Stijl: Wijnoogst
+Sluitingstype: Rits
+Grootte: Klein (20-30 cm)
+Product Code: 1105429294
+Categorie: Schoudertassen
+```
+
+### T12
+Link: https://nl.aliexpress.com/item/1005013301193235.html
+
+Notitie (niet in de input voor de tool): op de foto hangt een CE-label aan de knuffel. In de tekst staat nergens CE.
+
+```
+Titel: Nieuwe rode Niuniu Energy Drink blik pluche pop Kawaii huisdecoratie collectie verjaardagscadeau voor fans
+
+Specificaties:
+Is elektrisch: no
+Hoogwaardige chemicaliën: Geen
+Afstandsbediening: Nee
+Conditie: Artikelen op voorraad
+Geslacht: Uniseks
+Thema: Film en tv
+Materiaal: Pluche
+Artikeltype: Anime-accessoires
+Mfg-serienummer: Pluche serie
+Merknaam: Potdemiel
+Oorsprong: Cn (Oorsprong)
+Aanbevolen leeftijd: 14+ jaar
+
+Beschrijving:
+Productdetails:
+Materiaal: zacht pluche en PP-katoen
+Kleur: zoals afgebeeld
+Verpakking: 1 stuk per OPP-zak
+Opmerking:
+1. Vanwege de verschillen in cameraapparatuur, lichtintensiteit en beeldschermen kan de kleur van het product enigszins afwijken van de kleur die op de foto's wordt weergegeven.
+2. Vanwege handmatige metingen kan er een afwijking van 0,5 tot 2 cm optreden.
+```
+
+### T13
+Link: https://nl.aliexpress.com/item/1005013312854380.html
+
+Alleen titel en specificaties: de pagina heeft geen beschrijving in tekst.
+
+```
+Titel: Donker konijnenknuffel, gotische rebelse konijnenpop, schattig en opvallend dierenfiguur, knuffelpop, sleutelhanger, rugzakdecoratie, perfect cadeau
+
+Specificaties:
+Is elektrisch: no
+Hoogwaardige chemicaliën: Geen
+Thema: Dieren en natuur
+Waarschuwing: None
+Vullen: PP-katoen
+Oorsprong: Cn (Oorsprong)
+Cn: Guangdong
+Aanbevolen leeftijd: 14+ jaar
+```
+
 ## Antwoorden van de tool (v1, claude.ai)
 
 ### T01 run 1
@@ -844,8 +924,234 @@ UITLEG: Een metalen sleutelhanger ("Metaaltype: Roestvrij staal of zinklegering"
 
 Beoordeling: juist. "licht" is weg. Opvallend: de tool past de regel breder toe dan ik vroeg. Hij schrijft nu "zonder vermelding van breekbaarheid" in plaats van "niet breekbaar". Dat is voorzichtiger, maar ook wat omslachtig, want een metalen sleutelhanger is gewoon niet breekbaar.
 
+## Antwoorden van de tool (v3, claude -p, Haiku 5.5)
+
+Gedraaid op 15 oktober 2026 met `claude -p --model haiku` (claude-haiku-5-5), in een lege map zonder CLAUDE.md. Elke run is een apart gesprek. Niet helemaal te vergelijken met v1 en v2, die in claude.ai liepen.
+
+| ID | Juiste antwoord | Run 1 | Run 2 | Oordeel |
+|---|---|---|---|---|
+| T01 | GO | GO | GO | 2 × juist |
+| T02 | GO | GO | GO | 2 × juist |
+| T03 | GO | GO | GO | 2 × juist |
+| T04 | NO-GO (C) | NO-GO (C) | NO-GO (C) | 2 × juist |
+| T05 | ONZEKER | NO-GO (B) | NO-GO (B) | 2 × fout, F1 |
+| T06 | GO | GO | GO | 2 × juist |
+| T07 | NO-GO (D) | NO-GO (D) | NO-GO (D) | 2 × juist |
+| T08 | NO-GO (A, B) | NO-GO (A, B) | NO-GO (A, B) | 2 × juist |
+| T09 | NO-GO (B) | NO-GO (B) | NO-GO (B) | 2 × juist |
+| T10 | GO | GO | GO | 2 × juist |
+| T11 | NO-GO (A) | NO-GO (A) | NO-GO (A) | 2 × juist |
+| T12 | NO-GO (B) | NO-GO (B) | NO-GO (A, B) | 2 × juist. Opvallend: run 2 geeft extra risico A door "Niuniu Energy Drink", met een echt citaat. |
+| T13 | NO-GO (B) | NO-GO (B) | NO-GO (B) | 2 × juist |
+
+**T05, F1:** verkeerd label met echte citaten. Oorzaak: mijn regel 4 (kies de omschrijving met het meeste risico) loste T07 op, maar zorgt hier dat de tool "elektronisch" kiest uit 4 producttypes en dan NO-GO (B) zegt. Een regel die 1 input oplost, breekt een andere.
+
+Alle citaten staan letterlijk op de pagina: geen F2.
+
+### T01 run 1
+```
+OORDEEL: GO
+RISICO'S: geen
+UITLEG: Merknaam is OEM, het is een katoenen tas zonder elektronica, batterij of speelgoed, en het materiaal is katoen en geen glas of andere breekbare stof.
+```
+
+### T01 run 2
+```
+OORDEEL: GO
+RISICO'S: geen
+UITLEG: Merknaam is "OEM", elektronica of batterij komt niet voor, en de pagina noemt het product niet breekbaar; het pakket weegt 0.3 kg.
+```
+
+### T02 run 1
+```
+OORDEEL: GO
+RISICO'S: geen
+UITLEG: Een siliconen hoesje met merknaam "Neutral"; "Voor Apple Airpods/Airpods pro" geeft alleen aan waarop het past, en er staat geen elektronica, batterij of breekbaar materiaal op de pagina.
+```
+
+### T02 run 2
+```
+OORDEEL: GO
+RISICO'S: geen
+UITLEG: Siliconen hoesje voor AirPods/AirPods Pro met merknaam "Neutral", geen elektronica of batterij, en van silicone (niet breekbaar) van 0,030 kg.
+```
+
+### T03 run 1
+```
+OORDEEL: GO
+RISICO'S: geen
+UITLEG: Elektrische lader met CE-vermelding ("CE-gecertificeerd") en merknaam "SChitec/OEM", en de pagina noemt geen merk van iemand anders of breekbaar materiaal (behuizing van ABS en PC).
+```
+
+### T03 run 2
+```
+OORDEEL: GO
+RISICO'S: geen
+UITLEG: Elektrische lader met CE op de pagina ("CE-gecertificeerd"), geen merk van een ander, en geen breekbare, zware of vloeibare inhoud genoemd.
+```
+
+### T04 run 1
+```
+OORDEEL: NO-GO
+RISICO'S:
+- C: "Glass" (Basismateriaal) — Glas is breekbaar, en de pagina noemt glas als basismateriaal.
+UITLEG: Het product is een glazen flesje, en glas is breekbaar.
+```
+
+### T04 run 2
+```
+OORDEEL: NO-GO
+RISICO'S:
+- C: "Glas Parfum Rechthoekige Fles" — Het flesje is van glas, en glas is breekbaar (basismateriaal en behuizing staan op de pagina als "Glass").
+UITLEG: Glazen flesje, dus breekbaar en moeilijk te verzenden; geen merk van iemand anders en geen elektronica.
+```
+
+### T05 run 1
+```
+OORDEEL: NO-GO
+RISICO'S:
+- B: "Promotionele Elektronische Producten" — De productcategorie is elektronica, en CE niet vermeld.
+UITLEG: Het product wordt als elektronisch product omschreven zonder CE-vermelding, dus het mag niet zomaar in de EU verkocht worden.
+```
+
+### T05 run 2
+```
+OORDEEL: NO-GO
+RISICO'S:
+- B: "Promotionele Elektronische Producten" — CE niet vermeld op de pagina, terwijl het product als elektronisch product wordt aangeboden.
+UITLEG: De pagina noemt het product een elektronisch product zonder CE-vermelding, dus het mag niet in de EU verkocht worden.
+```
+
+### T06 run 1
+```
+OORDEEL: GO
+RISICO'S: geen
+UITLEG: Handventilator op 18650-accu met "CE - Voldoet aan de EU-normen" op de pagina, geen merknaam die op een ander merk lijkt, en geen breekbaar, vloeibaar of los batterijmateriaal genoemd.
+```
+
+### T06 run 2
+```
+OORDEEL: GO
+RISICO'S: geen
+UITLEG: Geen merk van een ander, CE staat vermeld en het product is niet breekbaar of zwaar; de Alibaba-disclaimer vraagt wel om de CE-conformiteitsverklaring bij de leverancier na te kijken.
+```
+
+### T07 run 1
+```
+OORDEEL: NO-GO
+RISICO'S:
+- D: "Dit collageen gummies-supplement is ontworpen voor dagelijkse schoonheidsverzorging" — De pagina noemt het product een supplement (ook "Gezondheidssupplementen" in de titel), en voedingssupplementen zijn beperkt op bol.com.
+UITLEG: De pagina noemt het zowel snoepgoed als supplement, dus ik behandel het als supplement; de naam "Huidblekende L-Glutathion Gummies" maakt dit alleen maar zwaarder.
+```
+
+### T07 run 2
+```
+OORDEEL: NO-GO
+RISICO'S:
+- D: "Dit collageen gummies-supplement is ontworpen voor dagelijkse schoonheidsverzorging" — De pagina noemt het product zelf een supplement, en voedingssupplementen vallen onder D. De pagina noemt het ook "snoepgoed", maar bij twee omschrijvingen geldt de riskantste.
+UITLEG: De pagina noemt het product zowel snoepgoed als supplement, dus het wordt behandeld als voedingssupplement, wat op bol.com verboden of beperkt is.
+```
+
+### T08 run 1
+```
+OORDEEL: NO-GO
+RISICO'S:
+- A: "Pluche Monster Energy pop 23CM-27CM Super Witte Energy Drink Vorm" — Het product is een pluche versie van het merkproduct Monster Energy en gebruikt de merknaam in de titel.
+- B: "type: drinkend speelgoed" — Speelgoed (pluche pop), CE niet vermeld.
+UITLEG: Merknaam Monster Energy in de titel en speelgoed zonder CE-vermelding, dus NO-GO.
+```
+
+### T08 run 2
+```
+OORDEEL: NO-GO
+RISICO'S:
+- A: "Pluche Monster Energy pop" — De merknaam Monster Energy zit in de titel en het ontwerp (vorm van de energiedrankblikjes, personage "Monster-energie").
+- B: "type: drinkend speelgoed" — Speelgoed, CE niet vermeld.
+UITLEG: Merknaam van een ander bedrijf in het productontwerp, en speelgoed waarvoor CE niet vermeld staat.
+```
+
+### T09 run 1
+```
+OORDEEL: NO-GO
+RISICO'S:
+- B: "Puissance: AC 110v-220v" — Netgevoede elektrische lamp met USB-C-lader, CE niet vermeld.
+UITLEG: Elektrisch apparaat zonder CE-vermelding op de pagina, dus het mag niet in de EU verkocht worden.
+```
+
+### T09 run 2
+```
+OORDEEL: NO-GO
+RISICO'S:
+- B: "Puissance: AC 110v-220v" — Elektrisch apparaat op netspanning (LED-bureaulamp met USB-poort), CE niet vermeld.
+UITLEG: Elektrisch apparaat zonder vermelde CE-markering, dus niet verkoopbaar in de EU.
+```
+
+### T10 run 1
+```
+OORDEEL: GO
+RISICO'S: geen
+UITLEG: Een metalen sleutelhanger zonder merknaam, elektronica, batterij of vloeistof, en de pagina noemt geen breekbaar materiaal.
+```
+
+### T10 run 2
+```
+OORDEEL: GO
+RISICO'S: geen
+UITLEG: Metalen sleutelhanger zonder merk, zonder elektronica of batterij, en het materiaal is metaal (geen glas of keramiek).
+```
+
+### T11 run 1
+```
+OORDEEL: NO-GO
+RISICO'S:
+- A: "Designer Frans geïnspireerde" — De titel zegt dat de tas op een designertas is geïnspireerd, wat wijst op een namaak van een merkproduct.
+UITLEG: De titel verwijst naar een designerontwerp, dus er is namaakrisico. Verder is het een gewone tas van PU zonder elektronica, batterij of breekbaar materiaal.
+```
+
+### T11 run 2
+```
+OORDEEL: NO-GO
+RISICO'S:
+- A: "Designer Frans geïnspireerde schoudertas" — "geïnspireerde" bij "designer" wijst op een kopie van een designertas, ook al staat er geen merknaam op de pagina.
+UITLEG: Namaakrisico door "Designer ... geïnspireerde", geen elektronica en niet breekbaar.
+```
+
+### T12 run 1
+```
+OORDEEL: NO-GO
+RISICO'S:
+- B: "pluche pop" — De pagina noemt het product een pluche pop, dus speelgoed, en CE niet vermeld.
+UITLEG: Pluche speelgoed zonder CE-vermelding mag je niet in de EU verkopen.
+```
+
+### T12 run 2
+```
+OORDEEL: NO-GO
+RISICO'S:
+- B: "pluche pop" — Pluche pop is speelgoed, en CE niet vermeld.
+- A: "Niuniu Energy Drink" — De naam van een energiedrank staat op het product zelf, dus het lijkt op een merkproduct.
+UITLEG: Speelgoed zonder vermelde CE, en de naam van een energiedrank op het product.
+```
+
+### T13 run 1
+```
+OORDEEL: NO-GO
+RISICO'S:
+- B: "Donker konijnenknuffel" — Knuffel en pop, dus speelgoed, en CE niet vermeld.
+UITLEG: Speelgoed zonder CE-vermelding, en de pagina toont geen certificaten.
+```
+
+### T13 run 2
+```
+OORDEEL: NO-GO
+RISICO'S:
+- B: "Donker konijnenknuffel" — Knuffel is speelgoed, en CE niet vermeld.
+UITLEG: Speelgoed zonder CE-vermelding mag je niet in de EU verkopen.
+```
+
 ## Succespercentage
 
 - v1: 10 op 10 juist (n = 5, 2 runs), T01–T05
 - v2: 5 op 5 juist (n = 5, 1 run), T06–T10
 - v3: 1 op 1 juist (n = 1, 1 run), alleen T10 opnieuw na de wijziging
+- v3: 24 op 26 juist (n = 13, 2 runs), T01–T13, via claude -p met Haiku 5.5. Per input: 12 op 13. Fouten: 2 × F1 (T05, beide runs). Geen F2. Geen F6: bij T12 waren label en risico B in beide runs gelijk, alleen het extra risico A wisselde (opvallend, geen fout).

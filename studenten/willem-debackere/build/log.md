@@ -30,3 +30,9 @@
 - Doelgroep: 3 op 3 gelijk aan mijn antwoorden (ja, nee, nee).
 - E-mail bij DL Interieur: "geen", omdat het buurtestblad elke site na 70 regels afkapte en het adres lager stond. Fout in het blad, niet in de prompt.
 - Ik moest niets extra uitleggen.
+
+## 2026-10-14 — v2, alle tien opnieuw (week 4)
+- Sonnet 5.5, 2 runs per input: **18 op 20 juist (n = 10, 2 runs)**.
+- T07 Bautier 2× `ja` (F1). In week 3 gaf dezelfde v2-prompt 2× `nee`. De wijziging hield geen stand: F6 over sessies.
+- Volgende wijziging (week 5): de regel dat "workshop" of "studio" niet bewijst dat een bedrijf zelf hout verwerkt.
+- Haiku 4.5 op T01 en T07, 1 run elk: allebei juist (ook T07). n = 2, zegt weinig.

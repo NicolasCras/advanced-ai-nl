@@ -3,7 +3,7 @@
 1. **Task:** For each guest review of Hotel Cosmopolite (including Brasserie Carrousel and Bar Caprice), determine the main topic and whether it needs a reply, and how urgently.
 2. **Input:** One review: the text and the score if there is one. Reviewer names removed.
 3. **Output:** Two labels.
-   - Topic: Food and drink, Bar, Service and staff, Room, Cleanliness, Booking and check-in, Noise, Parking, Price and value, General, or Unsure.
+   - Topic: Food and drink, Bar, Service and staff, Room, Cleanliness, Noise, Parking, Price and value, General, or Unsure.
    - Reply: Reply within 24 hours, Reply this week, No reply needed, or Unsure.
    - Way out: Unsure. A person decides.
    - The department is not chosen by the AI. It follows from the topic via the fixed table below.
@@ -19,7 +19,6 @@
 | Service and staff | Open point, see below |
 | Room | Reception |
 | Cleanliness | Housekeeping |
-| Booking and check-in | Reception |
 | Noise | Reception |
 | Parking | Reception |
 | Price and value | Management |

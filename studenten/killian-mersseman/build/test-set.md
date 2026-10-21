@@ -1,5 +1,29 @@
 # Testset — Kwartaalrapporten vergelijken
 
+## Eindoverzicht van de bestaande beoordelingen — 15 oktober 2026
+
+Dit overzicht brengt uitsluitend eerder vastgelegde studentbeoordelingen samen. Er zijn geen nieuwe runs uitgevoerd en geen ontbrekende beoordelingen ingevuld. Per input zijn twee runs geselecteerd; voor T01 het expliciet beoordeelde lokale testpaar met `prompt-v2-week02.md`, voor T03 de twee PDF-runs die de student met beperkingen afsloot. Oudere historische pogingen, gestopte linkruns en de afzonderlijke keuzevraagtest tellen niet nogmaals mee.
+
+| Input | Beoordeelde scope | Geslaagd | Niet geslaagd | Bruikbaar, beoordeling onvolledig |
+|---|---|---:|---:|---:|
+| T01 Netflix/Uber | Financiële kerncijfers, lokaal testpaar oudere v2 | 2 | 0 | 0 |
+| T02 Amazon/Alphabet | Financiële kerncijfers; student keurt beide niet volledig goed | 0 | 2 | 0 |
+| T03 S&P/Moody’s | PDF-runs; FCF-instructie niet meer vast te stellen | 0 | 0 | 2 |
+| T04 Novo/Lilly | Financiële kerncijfers | 2 | 0 | 0 |
+| T05 NVIDIA/AMD | Besproken omzetgroeicontrolepunt | 1 | 1 | 0 |
+| T06 Vistra/Constellation | Omzetgroei | 2 | 0 | 0 |
+| T07 JLR/Ferrari | Omzetgroei | 2 | 0 | 0 |
+| T08 PepsiCo/Coca-Cola | Omzetgroei | 2 | 0 | 0 |
+| T09 Rheinmetall/Lockheed Martin | Omzetgroei | 2 | 0 | 0 |
+| T10 LVMH/Hermès | Omzetgroei | 2 | 0 | 0 |
+| **Totaal** | **Verschillende scopes en promptversies** | **15** | **3** | **2** |
+
+**15 op 20 geselecteerde runs expliciet geslaagd beoordeeld: 75% (n = 10 inputs, 2 runs per input).** Dit is het aandeel bevestigde geslaagde beoordelingen, geen uniforme nauwkeurigheidsmeting: T01, T02 en T04 betreffen financiële kerncijfers, T05 één omzetgroeicontrolepunt, T06–T10 omzetgroei en T03 blijft onvolledig beoordeeld. De twee onvolledig beoordeelde runs zijn geen bewezen fouten en worden niet als geslaagd ingevuld. Risico’s en aanvullende bronclaims zijn niet volledig gevalideerd. De 100% voor T06–T10 blijft afzonderlijk geldig binnen die omzetgroeiscope. De telling valideert v3 en de Excel-update niet.
+
+Vastgelegde foutklassen: **F3 één geval** (T05 Run 1 mist AMD’s gerapporteerde groei), **F6 twee gevallen van wisselend gedrag tussen runparen** (T05 gerapporteerd/berekend en T02 onzekerheidslabel). Dezelfde T05-afwijking heeft twee labels; deze aantallen zijn dus geen vier onafhankelijke foutieve runs. T02 telt volgens de student als twee niet volledig geslaagde runs. T03 heeft geen definitieve foutklasse omdat de precieze aanvullende instructie ontbreekt. Voor F1, F2, F4 en F5 is binnen dit eindoverzicht geen definitieve fout vastgesteld; dat bewijst niet dat alle ongecontroleerde bronclaims foutloos zijn.
+
+De oudere passages hieronder blijven als voorgeschiedenis staan. Dit overzicht vervangt de eerdere melding dat er nog geen telling over alle tien inputs is, maar heft de verschillen in meetopzet niet op. Een uniforme hertest met één vaste prompt en gelijke controles zou een afzonderlijke meting zijn. De buurtest/peerreview is hiermee niet uitgevoerd.
+
 ## T01 — Netflix en Uber, Q2 2026
 
 - Netflix: https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm

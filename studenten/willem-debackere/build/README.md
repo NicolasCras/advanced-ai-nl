@@ -15,7 +15,9 @@ Leest de homepage van één bedrijf en zegt of het een mogelijke klant is (focus
 - `test-set.md` — tien inputs, juiste antwoorden, runs
 - `inputs/` — de websitetekst per test
 - `log.md` — elke run en elke wijziging
+- `kosten.md` — tokens en kost per run, per maand
+- `waarde.md` — tijdwinst en waarde per jaar
 
 ## Versies
 - **v1** (week 2) — eerste prompt. 10/10 op 5 inputs, 18/20 op 10 inputs.
-- **v2** (week 3) — regel erbij: wie alleen verkoopt of plaatst wat elders gemaakt wordt, is `nee`. Reden: fout bij T07.
+- **v2** (week 3) — regel erbij: wie alleen verkoopt of plaatst wat elders gemaakt wordt, is `nee`. Reden: fout bij T07. Week 4: 18/20 (n = 10, 2 runs), T07 weer fout.

@@ -1,0 +1,52 @@
+{
+  "records": [
+    {
+      "ticker": "LLY",
+      "end": "2026-06-30",
+      "source": "LLY-2026-06-30.pdf",
+      "status": "Nog te controleren",
+      "metric": "FCF",
+      "start": "2026-01-01",
+      "period_type": "Halfjaar",
+      "value": 10764,
+      "currency": "USD",
+      "method": "Berekend",
+      "definition": "Operationele kasstroom minus aankopen van materiële vaste activa.",
+      "page": "Gedrukte p. 8 / pdf-p. 8 — Consolidated Condensed Statements of Cash Flows",
+      "evidence": "Oorspronkelijk miljoen USD, zes maanden tot 30 juni 2026: Net Cash Provided by Operating Activities 16.023; Purchases of property and equipment (5.259). FCF = 16.023 - 5.259 = 10.764 miljoen USD.",
+      "note": "Afzonderlijke kwartaal-FCF en gerapporteerde FCF-definitie niet gevonden. Gebruiker koos eerste halfjaar 2026. Geen deling door twee. Uitgaven voor acquisities en in-process research and development worden niet afgetrokken in deze formule."
+    },
+    {
+      "ticker": "LLY",
+      "end": "2026-06-30",
+      "source": "LLY-2026-06-30.pdf",
+      "status": "Onzeker",
+      "metric": "Schuld",
+      "start": null,
+      "period_type": "Peildatum",
+      "value": 54908,
+      "currency": "USD",
+      "method": "Berekend",
+      "definition": "Boekwaarde kortlopende financiële schuld plus langlopende financiële schuld; geen aftrek van kasmiddelen.",
+      "page": "Gedrukte p. 7 / pdf-p. 7 — Consolidated Condensed Balance Sheets; p. 16–17 / pdf-p. 16–17 — Debt",
+      "evidence": "Oorspronkelijk miljoen USD op 30 juni 2026: Short-term borrowings and current maturities of long-term debt 7.050 + Long-term debt 47.858 = 54.908. Aansluiting p. 17: commercial paper 5.284 + long-term debt including current portion 49.624 = 54.908. Boekwaarde gebruikt, geen fair value.",
+      "note": "Operationele leases: afzonderlijke eindstand niet gevonden. Financiële leases: afzonderlijke eindstand en opname in schuld niet vastgesteld; volledigheid daarom onzeker. Renteloze obligaties niet afzonderlijk geïdentificeerd; geen bedragen verwijderd op basis van coupon. De vermelde nieuwe uitgifte is rentedragend; volledige couponuitsplitsing ontbreekt."
+    },
+    {
+      "ticker": "LLY",
+      "end": "2026-06-30",
+      "source": "LLY-2026-06-30.pdf",
+      "status": "Nog te controleren",
+      "metric": "Omzetgroei",
+      "start": "2026-04-01",
+      "period_type": "Kwartaal",
+      "value": 0.48,
+      "currency": null,
+      "method": "Gerapporteerd",
+      "definition": "Gerapporteerde kwartaalomzetgroei tegenover hetzelfde kwartaal vorig jaar.",
+      "page": "Gedrukte p. 24 / pdf-p. 24 — Executive Overview, Financial Results; p. 5 / pdf-p. 5 — Statements of Operations",
+      "evidence": "Oorspronkelijk miljoen USD: kwartaalomzet 2026 22.974; kwartaalomzet 2025 15.558. Gerapporteerd 48% opgeslagen als 0.48. Controle (22.974 / 15.558 - 1) = 0.4766679521789432; verschil berekend minus gerapporteerd = -0.3332047821056783 procentpunt.",
+      "note": "Controleberekening circa 47,667%; verschil circa -0,333 procentpunt. Oorzaak niet vastgesteld. Constante valuta maakt geen deel uit van deze hoofdwaarde."
+    }
+  ]
+}

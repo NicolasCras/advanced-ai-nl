@@ -29,3 +29,18 @@ test("legt na een bekende aankomst uit wat nog nodig is voor afhaling", () => {
 test("voegt geen afhaalvoorbereiding toe als de aankomstdatum onbekend is", () => {
   assert.equal(collectionNotice("Nog niet bekend"), "");
 });
+
+test("vertaalt de vaste uitleg voor een Franse klant", () => {
+  const notice = collectionNotice("18 oktober 2026", "Quand est-ce que ma voiture devrait arriver ?");
+  assert.match(notice, /Attention/);
+  assert.match(notice, /livraison ou d’enlèvement/);
+  assert.doesNotMatch(notice, /Let op|verkoper neemt contact/);
+});
+
+test("vertaalt de vaste uitleg voor een Engelse klant", () => {
+  const notice = collectionNotice("18 oktober 2026", "When will my car arrive at Ford Geeraerts?");
+  assert.match(notice, /Please note/);
+  assert.match(notice, /delivery or collection date/);
+  assert.doesNotMatch(notice, /Let op|verkoper neemt contact/);
+});
+

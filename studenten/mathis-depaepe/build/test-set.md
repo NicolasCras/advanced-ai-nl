@@ -31,11 +31,21 @@ Resultaat v2, T06–T10: 44 op 50 velden juist (n = 5, 1 run). Fouten: 5 × F1, 
 - T10 verkoper (F1): door de prompt, bij verkoper staat geen optie "onbekend".
 
 Na wijziging (v3), alleen de foute inputs opnieuw, 1 run:
-- T06: 9/10 juist (bouwjaar opnieuw fout)
+- T06: 9/10 juist (bouwjaar opnieuw fout, F1)
 - T08: 9/10 juist (referentienummer nu juist; doos_papieren fout, F1: het model zegt het omgekeerde van "Ohne Box". De nieuwe regel gaat niet over doos of papieren, dus dit is waarschijnlijk variatie en geen gevolg van de wijziging. In Run 1 was dit veld juist.)
 - T09: 10/10 juist (vraagprijs nu juist)
 
 Totaal op T06, T08 en T09: van 27/30 (v2, Run 1) naar 28/30 (v3) velden juist (n = 3, 1 run).
+
+Resultaat v4, T01–T10, run 1 en run 2: 188 op 200 velden juist (n = 10, 2 runs, v4, Haiku 5.5). Gedraaid met `claude -p --model haiku`, niet in ChatGPT. Ruwe uitvoer in `runs-v4/`. Fouten, telkens in beide runs:
+- T03 bouwjaar (F3): "Baujahr / Kaufdatum: 2025" stond er, het model gaf "onbekend".
+- T05 vraagprijs (F3): "€ 3.999,00" stond er, het model gaf "onbekend".
+- T07 vraagprijs (F3): "3.650 € VB" stond er, het model gaf "onbekend".
+- T08 doos_papieren (F3): "mit Zertifikat" en "Ohne Box" stonden er, het model gaf "onbekend".
+- T10 merk (F1): "Rolex", maar er werd geen horloge verkocht.
+- T10 verkoper (F1): "handelaar", ook met "onbekend" als optie in de prompt.
+
+Juist gerekend: T06, T08 en T09 model, en alle servicegeschiedenissen (andere woorden of een extra detail, zie de beoordelingsregels).
 
 ## Inputs
 
@@ -483,4 +493,124 @@ De openende `{` viel weg bij het kopiëren. De uitvoer van het model was volledi
 
 ```json
 {   "merk": "Tudor",   "model": "Black Bay 58 Blue",   "referentienummer": "79030B",   "bouwjaar": 2021,   "staat": "zeer goed",   "doos_papieren": "full set",   "vraagprijs": "onbekend",   "munt": "EUR",   "verkoper": "particulier",   "servicegeschiedenis": "onbekend" }
+```
+
+### T01 run 1 (v4, Haiku 5.5)
+
+```json
+{"merk": "Rolex", "model": "Datejust", "referentienummer": "1603", "bouwjaar": 1970, "staat": "zeer goed", "doos_papieren": "geen", "vraagprijs": 4195, "munt": "EUR", "verkoper": "particulier", "servicegeschiedenis": "onbekend"}
+```
+
+### T02 run 1 (v4, Haiku 5.5)
+
+```json
+{"merk": "Omega", "model": "Seamaster Dynamic", "referentienummer": "onbekend", "bouwjaar": "onbekend", "staat": "gedragen", "doos_papieren": "onbekend", "vraagprijs": 650, "munt": "EUR", "verkoper": "particulier", "servicegeschiedenis": "onbekend"}
+```
+
+### T03 run 1 (v4, Haiku 5.5)
+
+```json
+{"merk": "Rolex", "model": "Datejust 41", "referentienummer": "onbekend", "bouwjaar": "onbekend", "staat": "zeer goed", "doos_papieren": "enkel doos", "vraagprijs": 10500, "munt": "EUR", "verkoper": "handelaar", "servicegeschiedenis": "onbekend"}
+```
+
+### T04 run 1 (v4, Haiku 5.5)
+
+```json
+{"merk": "Audemars Piguet", "model": "Royal Oak Offshore", "referentienummer": "26020ST.OO.D091CR.01", "bouwjaar": 2012, "staat": "zeer goed", "doos_papieren": "enkel doos", "vraagprijs": 16995, "munt": "EUR", "verkoper": "handelaar", "servicegeschiedenis": "interne revisie op 8 mei 2026"}
+```
+
+### T05 run 1 (v4, Haiku 5.5)
+
+```json
+{"merk": "Tudor", "model": "Black Bay Chrono", "referentienummer": "onbekend", "bouwjaar": "onbekend", "staat": "zeer goed", "doos_papieren": "onbekend", "vraagprijs": "onbekend", "munt": "EUR", "verkoper": "particulier", "servicegeschiedenis": "onbekend"}
+```
+
+### T06 run 1 (v4, Haiku 5.5)
+
+```json
+{"merk": "Omega", "model": "Seamaster Planet Ocean 43 mm", "referentienummer": "21530442103001", "bouwjaar": "onbekend", "staat": "zeer goed", "doos_papieren": "onbekend", "vraagprijs": 3999, "munt": "EUR", "verkoper": "particulier", "servicegeschiedenis": "onbekend"}
+```
+
+### T07 run 1 (v4, Haiku 5.5)
+
+```json
+{"merk": "Omega", "model": "Seamaster Planet Ocean 600m", "referentienummer": "23230422101003", "bouwjaar": "onbekend", "staat": "zeer goed", "doos_papieren": "enkel doos", "vraagprijs": "onbekend", "munt": "EUR", "verkoper": "particulier", "servicegeschiedenis": "Laatste revisie maart 2026 bij Omega, factuur wordt meegeleverd."}
+```
+
+### T08 run 1 (v4, Haiku 5.5)
+
+```json
+{"merk": "Omega", "model": "Seamaster Professional 300", "referentienummer": "onbekend", "bouwjaar": "onbekend", "staat": "gedragen", "doos_papieren": "onbekend", "vraagprijs": 2450, "munt": "EUR", "verkoper": "particulier", "servicegeschiedenis": "Batterij gewisseld op 15.01.2024"}
+```
+
+### T09 run 1 (v4, Haiku 5.5)
+
+```json
+{"merk": "Tudor", "model": "Black Bay 58 Blue", "referentienummer": "79030B", "bouwjaar": 2021, "staat": "zeer goed", "doos_papieren": "full set", "vraagprijs": "onbekend", "munt": "EUR", "verkoper": "particulier", "servicegeschiedenis": "onbekend"}
+```
+
+### T10 run 1 (v4, Haiku 5.5)
+
+```json
+{"merk": "Rolex", "model": "onbekend", "referentienummer": "onbekend", "bouwjaar": "onbekend", "staat": "onbekend", "doos_papieren": "onbekend", "vraagprijs": "onbekend", "munt": "onbekend", "verkoper": "handelaar", "servicegeschiedenis": "onbekend"}
+```
+
+### T01 run 2 (v4, Haiku 5.5)
+
+```json
+{"merk": "Rolex", "model": "Datejust", "referentienummer": "1603", "bouwjaar": 1970, "staat": "zeer goed", "doos_papieren": "geen", "vraagprijs": 4195, "munt": "EUR", "verkoper": "particulier", "servicegeschiedenis": "onbekend"}
+```
+
+### T02 run 2 (v4, Haiku 5.5)
+
+```json
+{"merk": "Omega", "model": "Seamaster Dynamic", "referentienummer": "onbekend", "bouwjaar": "onbekend", "staat": "gedragen", "doos_papieren": "onbekend", "vraagprijs": 650, "munt": "EUR", "verkoper": "particulier", "servicegeschiedenis": "onbekend"}
+```
+
+### T03 run 2 (v4, Haiku 5.5)
+
+```json
+{"merk": "Rolex", "model": "Datejust 41", "referentienummer": "onbekend", "bouwjaar": "onbekend", "staat": "zeer goed", "doos_papieren": "enkel doos", "vraagprijs": 10500, "munt": "EUR", "verkoper": "handelaar", "servicegeschiedenis": "onbekend"}
+```
+
+### T04 run 2 (v4, Haiku 5.5)
+
+```json
+{"merk": "Audemars Piguet", "model": "Royal Oak Offshore", "referentienummer": "26020ST.OO.D091CR.01", "bouwjaar": 2012, "staat": "zeer goed", "doos_papieren": "enkel doos", "vraagprijs": 16995, "munt": "EUR", "verkoper": "handelaar", "servicegeschiedenis": "Interne revisie op 8 mei 2026."}
+```
+
+### T05 run 2 (v4, Haiku 5.5)
+
+```json
+{"merk": "Tudor", "model": "Black Bay Chrono", "referentienummer": "onbekend", "bouwjaar": "onbekend", "staat": "zeer goed", "doos_papieren": "onbekend", "vraagprijs": "onbekend", "munt": "EUR", "verkoper": "particulier", "servicegeschiedenis": "onbekend"}
+```
+
+### T06 run 2 (v4, Haiku 5.5)
+
+```json
+{"merk": "Omega", "model": "Seamaster Planet Ocean", "referentienummer": "21530442103001", "bouwjaar": "onbekend", "staat": "zeer goed", "doos_papieren": "onbekend", "vraagprijs": 3999, "munt": "EUR", "verkoper": "particulier", "servicegeschiedenis": "onbekend"}
+```
+
+### T07 run 2 (v4, Haiku 5.5)
+
+```json
+{"merk": "Omega", "model": "Seamaster Planet Ocean 600m", "referentienummer": "23230422101003", "bouwjaar": "onbekend", "staat": "zeer goed", "doos_papieren": "enkel doos", "vraagprijs": "onbekend", "munt": "EUR", "verkoper": "particulier", "servicegeschiedenis": "laatste revisie in 03.2026 bij Omega, factuur wordt meegeleverd"}
+```
+
+### T08 run 2 (v4, Haiku 5.5)
+
+```json
+{"merk": "Omega", "model": "Seamaster Professional 300", "referentienummer": "onbekend", "bouwjaar": "onbekend", "staat": "gedragen", "doos_papieren": "onbekend", "vraagprijs": 2450, "munt": "EUR", "verkoper": "particulier", "servicegeschiedenis": "batterij vervangen op 15.01.2024"}
+```
+
+### T09 run 2 (v4, Haiku 5.5)
+
+```json
+{"merk": "Tudor", "model": "Black Bay 58 Blue", "referentienummer": "79030B", "bouwjaar": 2021, "staat": "zeer goed", "doos_papieren": "full set", "vraagprijs": "onbekend", "munt": "EUR", "verkoper": "particulier", "servicegeschiedenis": "onbekend"}
+```
+
+### T10 run 2 (v4, Haiku 5.5)
+
+```json
+{"merk": "Rolex", "model": "onbekend", "referentienummer": "onbekend", "bouwjaar": "onbekend", "staat": "onbekend", "doos_papieren": "onbekend", "vraagprijs": "onbekend", "munt": "onbekend", "verkoper": "handelaar", "servicegeschiedenis": "onbekend"}
 ```

@@ -1,0 +1,52 @@
+{
+  "records": [
+    {
+      "ticker": "AMZN",
+      "end": "2026-06-30",
+      "source": "AMZN-2026-06-30.pdf",
+      "status": "Nog te controleren",
+      "metric": "FCF",
+      "start": "2026-04-01",
+      "period_type": "Kwartaal",
+      "value": -8821,
+      "currency": "USD",
+      "method": "Berekend",
+      "definition": "Operationele kasstroom minus aankopen van materiële vaste activa; geen verrekening van verkoopopbrengsten of incentives.",
+      "page": "Gedrukt/pdf p. 3, Consolidated Statements of Cash Flows; p. 33, Free Cash Flow",
+      "evidence": "Oorspronkelijke schaal: in millions, USD. Three Months Ended June 30, 2026: Net cash provided by operating activities 45,387; Purchases of property and equipment (54,208). Formule: 45,387 - 54,208 = -8,821 miljoen USD.",
+      "note": "Afzonderlijke kwartaalcomponenten beschikbaar. Bedrijfs-FCF wordt alleen over twaalf maanden gerapporteerd: 2025-07-01 t/m 2026-06-30, -7,604 miljoen USD = 161,403 - 169,007. Bedrijfsdefinitie trekt aankopen af na verrekening van verkoopopbrengsten en incentives (kwartaal: 1,132 miljoen USD); de berekende kwartaalwaarde volgt de gevraagde bruto-aankopenformule en verschilt dus van die definitie. Geen deling van jaarcijfers."
+    },
+    {
+      "ticker": "AMZN",
+      "end": "2026-06-30",
+      "source": "AMZN-2026-06-30.pdf",
+      "status": "Nog te controleren",
+      "metric": "Schuld",
+      "start": null,
+      "period_type": "Peildatum",
+      "value": 155315,
+      "currency": "USD",
+      "method": "Berekend",
+      "definition": "Boekwaarde kortlopende plus langlopende financiële schuld, inclusief financiële leases en financieringsverplichtingen; exclusief operationele leases.",
+      "page": "Gedrukt/pdf p. 14, Note 3 Leases; p. 15, Note 4 Commitments voetnoot 1; p. 17-18, Note 5 Debt",
+      "evidence": "USD, in millions tenzij anders vermeld. Current portion long-term debt 3,330 + other short-term facilities 325 + long-term debt 128,894 + current financing obligations 415 + long-term financing obligations 8.9 billion (=8,900 miljoen) + current finance leases 1,688 + long-term finance leases 11,763 = circa 155,315 miljoen USD. Schuld exclusief leases/financieringsverplichtingen: 132,549. Long-term debt face value 132,995 minus discount/issuance costs 771 = carrying amount 132,224, waarvan current 3,330 en non-current 128,894.",
+      "note": "Financieringsverplichtingen langlopend zijn afgerond op 8.9 miljard; totaal daarom circa. Operationele leases apart en uitgesloten: current 13,745 + non-current 82,575 = 96,320 miljoen USD. Financiële leases inbegrepen: 13,451 miljoen USD. Commercial paper, beide revolving facilities en delayed draw term loan: geen uitstaande leningen op einddatum. Geen afzonderlijke renteloze obligaties geïdentificeerd in Note 5; geen veronderstelde nulcomponent toegevoegd. Latere schuldemissie uitgesloten van peildatum."
+    },
+    {
+      "ticker": "AMZN",
+      "end": "2026-06-30",
+      "source": "AMZN-2026-06-30.pdf",
+      "status": "Nog te controleren",
+      "metric": "Omzetgroei",
+      "start": "2026-04-01",
+      "period_type": "Kwartaal",
+      "value": 0.2,
+      "currency": null,
+      "method": "Gerapporteerd",
+      "definition": "Gerapporteerde geconsolideerde kwartaalgroei van total net sales tegenover hetzelfde kwartaal vorig jaar, inclusief valuta-effecten.",
+      "page": "Gedrukt/pdf p. 29, Results of Operations - Net Sales; p. 4, Consolidated Statements of Operations; p. 34, Effect of Foreign Exchange Rates",
+      "evidence": "Oorspronkelijke omzetbedragen in millions USD: Q2 2026 200,606; Q2 2025 167,702. Gerapporteerde groei 20% = 0.20. Controle: (200606 / 167702 - 1) = 0.19620517346245125; verschil controle minus gerapporteerd = -0.37948265375487567 procentpunt.",
+      "note": "Hoofdwaarde is het gerapporteerde percentage; geen oorzaak voor het verschil met controleberekening aangenomen. Constante valuta afzonderlijk: gerapporteerde groei excluding foreign exchange rates 20% (0.20); Q2 2026 omzet tegen vorigejaarskoersen 200,531 miljoen USD. Vergelijkingskwartaal 2025-04-01 t/m 2025-06-30."
+    }
+  ]
+}

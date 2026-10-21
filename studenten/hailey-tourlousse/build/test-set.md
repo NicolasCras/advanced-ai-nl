@@ -65,23 +65,27 @@ Real Booking.com reviews of Hotel Cosmopolite. Names removed, hotel replies remo
 
 ## Correct answers and runs
 
-Topic: Food and drink, Bar, Service and staff, Room, Cleanliness, Booking and check-in, Noise, Parking, Price and value, General, Unsure.
+Topic: Food and drink, Bar, Service and staff, Room, Cleanliness, Noise, Parking, Price and value, General, Unsure.
 Reply: Reply within 24 hours, Reply this week, No reply needed, Unsure.
 
 | ID | Correct topic | Correct reply | Why | Run 1 | Run 2 |
 |---|---|---|---|---|---|
-| T01 | Room | Reply this week | Not urgent; they seem content about the rest. | | |
-| T02 | Price and value | Reply this week | The wellness is expensive; we could reply with an offer that is displayed on our website. | | |
-| T03 | Price and value | Reply within 24 hours | The main thing is that the hotel is expensive; she's also disappointed about the room and breakfast. | | |
-| T04 | Service and staff | Reply within 24 hours | A very negative score (under 5), so very urgent. | | |
-| T05 | Noise | Reply within 24 hours | Even with a score of 8, they are not happy and do not recommend the room, which is not good. | | |
-| T06 | Cleanliness | Reply within 24 hours | A nicotine smell in the room is always bad, and the score is 2/10, which is really bad. | | |
-| T07 | General | No reply needed | They are happy. | | |
-| T08 | Service and staff | Reply this week | Reception handled it kindly, and mild words like "not very attentive" show it's not that bad. | | |
-| T09 | Price and value | Reply this week | The restaurant, room and breakfast are called expensive, so not positive; an expensive hotel also needs an answer. | | |
-| T10 | Room | Reply this week | Hair in the fridge, ugly view and too few sockets are all about the room; they ask a question, so it needs a reply this week. | | |
+| T01 | Room | Reply this week | Not urgent; they seem content about the rest. | Room / this week | Room / this week |
+| T02 | Price and value | Reply this week | The wellness is expensive; we could reply with an offer that is displayed on our website. | Room / this week (F1) | Room / this week (F1) |
+| T03 | Price and value | Reply within 24 hours | The main thing is that the hotel is expensive; she's also disappointed about the room and breakfast. | Room / 24 hours (F1) | Room / 24 hours (F1) |
+| T04 | Service and staff | Reply within 24 hours | A very negative score (under 5), so very urgent. | Booking and check-in / 24 hours (F1) | Booking and check-in / 24 hours (F1) |
+| T05 | Noise | Reply within 24 hours | Even with a score of 8, they are not happy and do not recommend the room, which is not good. | Noise / 24 hours | Noise / 24 hours |
+| T06 | Cleanliness | Reply within 24 hours | A nicotine smell in the room is always bad, and the score is 2/10, which is really bad. | Cleanliness / 24 hours | Room / 24 hours (F6) |
+| T07 | General | No reply needed | They are happy. | General / no reply | General / no reply |
+| T08 | Service and staff | Reply this week | Reception handled it kindly, and mild words like "not very attentive" show it's not that bad. | Service and staff / this week | Service and staff / 24 hours (F6) |
+| T09 | Price and value | Reply this week | The restaurant, room and breakfast are called expensive, so not positive; an expensive hotel also needs an answer. | Price and value / this week | Price and value / this week |
+| T10 | Room | Reply this week | Hair in the fridge, ugly view and too few sockets are all about the room; they ask a question, so it needs a reply this week. | Room / 24 hours (F1) | Room / 24 hours (F1) |
 
-Result: __ out of __ correct (n = __, __ run).
+Run 1 and Run 2: prompt v1, Claude Haiku 4.5, each review in a new session, 2026-10-20. Correct = both labels the same as mine.
+
+Result v1: **10 out of 20 correct (n = 10, 2 runs).** Topic alone: 13 out of 20. Reply alone: 17 out of 20.
+
+Mistakes: 10. F1 (wrong): 8 (T02, T03, T04, T10, both runs). F6 (inconsistent): 2 (T06, T08).
 
 ## Spare reviews (not in the test set, not in the prompt)
 
@@ -95,3 +99,18 @@ Result: __ out of __ correct (n = __, __ run).
 > **Twas een perfecte driedaagse**
 > Airco op de kamer
 > Kraan bad was onbruikbaar. Douche werkte wel heel goed
+
+## Rerun of the mistakes with v2
+
+Prompt v2 ("Booking and check-in" removed), Claude Haiku 4.5, 2026-10-20. Only the six reviews with mistakes, two runs each.
+
+| ID | Correct (mine) | v2 Run 1 | v2 Run 2 |
+|---|---|---|---|
+| T02 | Price and value / this week | Room / this week | Room / this week |
+| T03 | Price and value / 24 hours | Room / 24 hours | Room / 24 hours |
+| T04 | Service and staff / 24 hours | Service and staff / 24 hours | Service and staff / 24 hours |
+| T06 | Cleanliness / 24 hours | Cleanliness / 24 hours | Cleanliness / 24 hours |
+| T08 | Service and staff / this week | Service and staff / this week | Service and staff / 24 hours |
+| T10 | Room / this week | Room / 24 hours | Room / 24 hours |
+
+On these six reviews: v1 2 out of 12 correct, v2 5 out of 12 correct (n = 6, 2 runs).

@@ -1,5 +1,12 @@
 # Logboek
 
+## Nieuwe testrun — 20 oktober 2026
+
+- **Versie:** v2
+- **Resultaat:** 8 van 10 juist (n = 10, 1 run)
+- **Fouten:** bij reviews 2 en 5 voegde de tool een extra label toe (F1). Beide reviews zijn dubbelzinnig: “fijn evenement” kan als sfeer gelezen worden en “genoeg te doen” als organisatie.
+- **Volgende stap:** de huidige fouten zijn voorlopig aanvaardbaar, omdat ik elke uitkomst zelf nakijk voordat ik de labels gebruik.
+
 Elke run, elk resultaat en elke wijziging komt hier. Wis geen fouten.
 
 | Datum | Versie | Wat ik deed | Resultaat | Fout of opvallend | Volgende stap |

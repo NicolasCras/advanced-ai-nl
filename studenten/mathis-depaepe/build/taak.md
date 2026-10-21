@@ -1,6 +1,6 @@
 # Taak — Velden uit horlogeadvertenties halen
 
-1. **Taak:** uit een advertentie van een tweedehands luxehorloge acht vaste velden halen, zodat ik snel zie welke horloges verder onderzoek waard zijn.
+1. **Taak:** uit een advertentie van een tweedehands luxehorloge tien vaste velden halen, zodat ik snel zie welke horloges verder onderzoek waard zijn.
 2. **Input:** de tekst van één advertentie (bv. Chrono24, 2dehands).
 3. **Output:** een record met merk en model, referentienummer, bouwjaar, staat (nieuw / zeer goed / gedragen / beschadigd), doos en papieren (full set / enkel doos / enkel papieren / geen), vraagprijs en munt, verkoper (particulier / handelaar), servicegeschiedenis. Staat iets er niet in: "onbekend". Nooit aanvullen uit eigen kennis.
 4. **Soort AI:** taalmodel, want de input is vrije tekst die elke verkoper anders schrijft. Of het een koopje is, beslist later een vaste prijsregel, geen AI.

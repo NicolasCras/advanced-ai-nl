@@ -19,3 +19,13 @@ Cansu koos deze taak omdat ze in de gym vaak haar vorige gewicht niet meer weet 
 5. seated hamstring curl, 20kg, 4 x 12
 
 De vijf eigen trainingsnotities zijn verzameld. De juiste antwoorden schrijft Cansu zelf in `test-set.md`, vóór de AI wordt getest.
+
+## Gewenst scherm tijdens de training — 14 oktober 2026
+
+Cansu beschrijft haar gewenste gebruik:
+
+> Ik wil dat ik tijdens mijn training gewoon op de oefening kan klikken en meteen mijn vorige gewicht, aantal sets en herhalingen zie. Het moet duidelijk en groot op mijn scherm staan, zodat ik niet moet zoeken of door oude notities scrollen.
+
+Met ‘vorige’ bedoelt Cansu de laatste keer dat ze die oefening deed, ongeacht of dat bij Jims Lokeren, Dok-Noord of Overpoort was. Het scherm moet dus de meest recente registratie over alle locaties heen tonen.
+
+Dit scherm is nog niet gebouwd. Het vraagt om bewaren van eerdere trainingsgegevens en ophalen van de laatste registratie per oefening, met gewone software. De AI blijft verantwoordelijk voor het omzetten van de notitie naar gegevens. Cansu vindt progressie volgen nuttig, maar wil daarnaast tijdwinst. Die tijdwinst moet in echt gebruik worden getoetst; de oorspronkelijke schatting van 30 seconden terugzoeken is geen meting van dit gewenste scherm.

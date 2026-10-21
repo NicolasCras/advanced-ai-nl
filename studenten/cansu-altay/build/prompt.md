@@ -8,6 +8,7 @@ Maak van een gewicht per dumbbell niet zelf een totaalgewicht; behoud zulke verm
 Neem het aantal sets en herhalingen over. Als er verschillende gewichten of herhalingen per set staan, behoud die verschillen en hun volgorde in de betreffende cel.
 Geef geen advies over het gewicht voor een volgende training.
 Als een gegeven ontbreekt of onduidelijk is, zet dan onbekend in die cel.
+Als het niet duidelijk is of een genoemde laatste set binnen het opgegeven aantal sets valt of een extra set is, zet dan onbekend bij Sets. Kies niet zelf een totaal aantal sets. Behoud bij Herhalingen de expliciet genoemde informatie zonder die aan een zelfgekozen aantal sets toe te wijzen.
 Uitzondering voor herhalingen: als de notitie expliciet vermeldt dat een set tot failure ging (ook geschreven als faillure) en het aantal herhalingen voor die set ontbreekt, schrijf dan tot failure (aantal onbekend) voor die set. Behoud de genoemde herhalingen van de andere sets en hun volgorde. Voeg geen failure toe als dat niet in de notitie staat.
 
 Antwoord uitsluitend met deze tabel en één gegevensrij:

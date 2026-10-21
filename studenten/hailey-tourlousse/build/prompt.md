@@ -1,4 +1,4 @@
-# v1 — prompt
+# v2 — prompt
 
 Paste this into a new chat. Replace the review at the bottom.
 
@@ -11,7 +11,6 @@ Choose exactly one topic: the subject the review is mainly about.
 - "Service and staff": how staff behaved or helped.
 - "Room": the room, the bed, the bathroom, the view.
 - "Cleanliness": how clean or dirty something was.
-- "Booking and check-in": reservations, arrival, check-in, check-out.
 - "Noise": noise during the stay.
 - "Parking": parking near or at the business.
 - "Price and value": the price, or what you get for it.

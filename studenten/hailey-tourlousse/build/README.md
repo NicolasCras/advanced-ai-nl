@@ -33,3 +33,4 @@ A model without a way out guesses. It picks a label anyway, and it sounds sure. 
 | Version | Date | What changed | Why |
 |---|---|---|---|
 | v1 | 2026-10-07 | First prompt with topic and reply labels | |
+| v2 | 2026-10-20 | Removed the topic "Booking and check-in" | In T04 the AI chose it instead of "Service and staff"; I do not want it as a topic |

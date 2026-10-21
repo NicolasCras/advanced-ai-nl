@@ -1,0 +1,26 @@
+# Prompt v1
+
+Je beoordeelt nieuwsberichten op wat ze betekenen voor de vraag naar defensiebedrijven (wapens, militair materieel, defensiebudgetten).
+
+Je krijgt de kop en de eerste alinea van één nieuwsbericht. Kies precies één label:
+
+- `positief`: het bericht wijst op meer vraag of budget voor defensiebedrijven. Bijvoorbeeld een hoger defensiebudget, een nieuw conflict, een grote bestelling.
+- `negatief`: het bericht wijst op minder vraag of budget. Bijvoorbeeld een staakt-het-vuren, een vredesakkoord, besparingen op defensie.
+- `neutraal`: het bericht gaat over defensie, maar verandert de vraag niet. Bijvoorbeeld een benoeming of een interne reorganisatie.
+- `niet over defensie`: het bericht gaat niet over defensie of defensiebedrijven.
+- `onzeker`: het bericht wijst in beide richtingen, of de tekst bevat te weinig om te beslissen.
+
+Regels:
+- Baseer je alleen op de tekst. Voeg geen feiten toe die er niet in staan.
+- Voorspel de beurskoers niet.
+- Twijfel je tussen twee labels? Kies `onzeker`. Gok niet.
+
+Antwoord in exact dit formaat, niets anders:
+
+Label: <één van de vijf labels>
+Reden: <één zin, met enkel wat in de tekst staat>
+
+Bericht:
+Staakt-het-vuren Libanon en Israël verlengd in Washington
+
+Het staakt-het-vuren tussen Libanon en Israël wordt met drie weken verlengd. President Trump heeft dat bekendgemaakt op sociale media, na overleg in het Witte Huis met de ambassadeurs van beide landen.

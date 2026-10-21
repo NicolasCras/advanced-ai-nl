@@ -1,0 +1,29 @@
+# Volledige run v2, Haiku 4.5 (claude-haiku-4-5), 20 oktober 2026. Elke input 2 keer, apart, in een lege map, zonder tools.
+T01 run 1: ```json\n{"interessant": "ja", "soort_werk": "grondwerk", "reden": "Grondwerk: reliëfwijziging, aanleggen keermuren en opritaanpassingen duren langer dan één dag."}
+T01 run 2: ```json\n{\n  "interessant": "onzeker",\n  "soort_werk": "grondwerk",\n  "reden": "Reliëfwijziging en aanleggen van keermuren wijzen op grondwerk, maar de omvang van het terrein en de werkzaamheden staat niet vermeld."\n}
+T02 run 1: ```json\n{"interessant": "onzeker", "soort_werk": "grondwerk", "reden": "Nivellering van akkerland is grondwerk, maar de beschrijving vermeldt niet de grootte van het perceel, dus onduidelijk of het langer dan één dag duurt."}
+T02 run 2: ```json\n{"interessant": "onzeker", "soort_werk": "grondwerk", "reden": "Nivellering is grondwerk, maar de omvang en duur van het project staan niet in de beschrijving."}
+T03 run 1: ```json\n{"interessant": "ja", "soort_werk": "beide", "reden": "Aanbouw wordt gesloopt (afbraak) en meergezinswoning wordt uitgebreid (grondwerk), werk dat zeker langer dan één dag duurt."}
+T03 run 2: ```json\n{"interessant": "ja", "soort_werk": "afbraak", "reden": "Slopen van aanbouw is afbraak; verbouwen en uitbreiden van meergezinswoning duurt langer dan één dag."}
+T04 run 1: ```json\n{"interessant": "ja", "soort_werk": "beide", "reden": "Afbraak van stallen en aanleggen van verharding duurt langer dan één dag."}
+T04 run 2: ```json\n{"interessant": "ja", "soort_werk": "beide", "reden": "Afbraak stallen en aanleggen verharding zijn meer dan eendaags werk op deze bedrijfslocatie."}
+T05 run 1: ```json\n{"interessant": "ja", "soort_werk": "grondwerk", "reden": "Groot project met meerdere grondwerkzaamheden (talud, wadi, vijver, kelders, verharding) die duidelijk langer dan één dag duren."}
+T05 run 2: ```json\n{"interessant": "ja", "soort_werk": "grondwerk", "reden": "Grondwerk voor kelders, talud, wadi en vijver in agrarisch bouwproject duurt veel langer dan één dag."}
+T06 run 1: ```json\n{"interessant": "ja", "soort_werk": "beide", "reden": "Afbraak van meerdere gebouwen (2 stallen en garage) en aanleg van verhardingen is meerwerk langer dan één dag."}
+T06 run 2: ```json\n{"interessant": "ja", "soort_werk": "beide", "reden": "Slopen van meerdere landbouwgebouwen en aanleggen van verhardingen vormt afbraak en grondwerk dat veel langer dan één dag duurt."}
+T07 run 1: ```json\n{"interessant": "ja", "soort_werk": "grondwerk", "reden": "Aanleggen van folieput, lavaput, mestput en betonverharding is grondwerk dat voor zo'n agrarisch project zeker langer dan één dag duurt."}
+T07 run 2: ```json\n{"interessant": "ja", "soort_werk": "grondwerk", "reden": "Graven van drie putten (folieput, lavaput, mestput) en aanleggen van betonverharding is waarschijnlijk meer dan één dagwerk."}
+T08 run 1: ```json\n{"interessant": "nee", "soort_werk": "geen", "reden": "Dit betreft administratieve aanpassingen van voorwaarden voor een inrichting, geen afbraak of grondwerk."}
+T08 run 2: ```json\n{\n  "interessant": "nee",\n  "soort_werk": "geen",\n  "reden": "Dit is een administratieve aanvraag voor bijstelling van voorwaarden voor een inrichting, geen grond- of afbraakwerk."\n}
+T09 run 1: ```json\n{"interessant": "ja", "soort_werk": "grondwerk", "reden": "Grondwerk (vijvers uitbaggeren en samenvoegen) duurt langer dan één dag."}
+T09 run 2: ```json\n{"interessant": "onzeker", "soort_werk": "grondwerk", "reden": "Uitbaggeren van vijvers is grondwerk, maar de grootte van de vijvers staat niet in de beschrijving, dus onzeker of het werk langer dan één dag duurt."}
+T10 run 1: ```json\n{"interessant": "nee", "soort_werk": "geen", "reden": "Het is uitsluitend interieurinrichting van een praktijkruimte zonder afbraak of grondwerk."}
+T10 run 2: ```json\n{"interessant": "nee", "soort_werk": "geen", "reden": "Inrichting van een pedicurepraktijk is interieurwerk, geen afbraak of grondwerk."}
+T11 run 1: ```json\n{"interessant": "nee", "soort_werk": "geen", "reden": "Plaatsen van een weermast is geen afbraak- of grondwerk."}
+T11 run 2: ```json\n{"interessant": "nee", "soort_werk": "geen", "reden": "Plaatsen van een weermast is geen afbraak- of grondwerk."}
+T12 run 1: ```json\n{"interessant": "onzeker", "soort_werk": "onzeker", "reden": "Niet duidelijk of de transformatie en uitbreiding afbraak of grondwerk inhouden, noch hoe lang het werk duurt."}
+T12 run 2: ```json\n{"interessant": "nee", "soort_werk": "geen", "reden": "De aanvraag beschrijft transformatie en uitbreiding van een woning, maar vermeldt geen afbraak of grondwerk."}
+T13 run 1: ```json\n{"interessant": "nee", "soort_werk": "geen", "reden": "Dit betreft regularisatie van bestaande werken, geen actueel grond- of afbraakwerk voor het bedrijf."}
+T13 run 2: ```json\n{"interessant": "nee", "soort_werk": "geen", "reden": "Regularisatieaanvraag van bestaande constructies zonder afbraak of grondwerk."}
+T14 run 1: ```json\n{"interessant": "nee", "soort_werk": "afbraak", "reden": "Afbraak van bestaande hekwerk is klein werk dat in één dag kan worden afgerond."}
+T14 run 2: ```json\n{"interessant": "onzeker", "soort_werk": "afbraak", "reden": "Afbraak van hek is zeker, maar totale omvang van het rijwegwerk onduidelijk."}

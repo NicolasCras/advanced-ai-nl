@@ -11,9 +11,10 @@
 - Kort maar juist, liever dan onnodig lang. Geef het resultaat met een korte uitleg waarom.
 
 ## Wat ik al kan
-- Git: nee, vandaag voor het eerst
+- Git: ongeveer 70% zelfstandig, vanaf nu zelfstandig bezig
 - Programmeren: Excel-formules. Vroeger een beetje Java en HTML geprobeerd, niet doorgezet.
 - AI-tools: ChatGPT en Gemini, om dingen op te zoeken, inspiratie op te doen en onduidelijke schoolopdrachten te verhelderen
+- Claude Code: gebruik ik al
 
 ## Dit vak
 - Richting: nog geen vaste hoek. Doel: beter en efficiënter worden in het gebruik van AI, een stapje voor hebben op anderen.

@@ -539,3 +539,272 @@ Input 8, tweede run op 8 oktober 2026 met v3 met alleen voorbeelden, antwoord ge
 | dumbbell pullover | 10kg, 12, 14 | 3 | tot failure (aantal onbekend), tot failure (aantal onbekend), tot failure (aantal onbekend) |
 
 Correct en identiek aan de eerste run. Gerichte hertest afgerond: oorspronkelijke v3 1/4 correct op inputs 8 en 9, v3 met alleen voorbeelden 4/4 correct (twee inputs, twee runs). Verwachte antwoorden gelijk gebleven; alleen bouwsteen voorbeelden gewijzigd. Geen volledige testsetscore of bewijs van algemene betrouwbaarheid.
+
+## Volledige hertestronde v4 — gestart op 14 oktober 2026
+
+Prompt: huidige `prompt.md` (v4). Model/instelling door Cansu gerapporteerd als `GPT 5.6 terra hoog`; letterlijk overgenomen, technische model-ID niet vastgesteld. Plan: de tien oorspronkelijke inputs elk tweemaal in een nieuw leeg gesprek, met dezelfde prompt en modelinstelling. Verwachte antwoorden blijven vooraf vastgelegd. Input 7 is ook een voorbeeld in de prompt en moet als zodanig herkenbaar blijven. De Codex-kostenmeting is een aparte run en telt niet mee in deze ronde.
+
+### Input 1 — run 1
+
+Notitie: `bulgarian split squat, 20kg, 4 sets, 12 reps`.
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| Bulgarian split squat | 20kg | 4 | 12 |
+
+Cansu beoordeelt dit antwoord als correct. De hoofdletter verandert de betekenis van de oefennaam niet.
+
+### Input 1 — run 2
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| Bulgarian split squat | 20kg | 4 | 12 |
+
+Cansu beoordeelt ook run 2 als correct. Beide antwoorden zijn identiek: input 1 is 2/2 correct. Voorlopig 2 correcte runs geregistreerd van 20 geplande runs; nog geen volledige testsetscore.
+
+### Input 2 — run 1
+
+Notitie: `RDL, 40kg, 4 sets, 12 reps`. Dezelfde prompt v4 en door Cansu genoemde modelinstelling `GPT 5.6 terra hoog`.
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| RDL | 40kg | 4 | 12 |
+
+Cansu beoordeelt run 1 als correct. Run 2 nog uit te voeren. Voorlopig 3 correcte runs geregistreerd van 20 geplande runs; nog geen volledige testsetscore.
+
+### Input 2 — run 2
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| RDL | 40kg | 4 | 12 |
+
+Cansu beoordeelt run 2 als correct. Beide antwoorden zijn identiek: input 2 is 2/2 correct. Dezelfde prompt en modelinstelling als run 1. Voorlopig 4 correcte runs geregistreerd van 20 geplande runs; nog geen volledige testsetscore.
+
+### Input 3 — run 1
+
+Notitie: `cable kickbaks, 15kg, 4 sets, 12 reps`. Dezelfde prompt v4 en modelinstelling `GPT 5.6 terra hoog`.
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| cable kickbacks | 15kg | 4 | 12 |
+
+Cansu beoordeelt run 1 als correct, inclusief de spellingcorrectie van `kickbaks` naar `kickbacks`, passend bij de bestaande promptregel. Run 2 nog uit te voeren. Voorlopig 5 correcte runs geregistreerd van 20 geplande runs; nog geen volledige testsetscore.
+
+### Input 3 — run 2
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| cable kickbacks | 15kg | 4 | 12 |
+
+Cansu beoordeelt run 2 als correct. Beide antwoorden zijn identiek: input 3 is 2/2 correct. Dezelfde prompt en modelinstelling als run 1. Voorlopig 6 correcte runs geregistreerd van 20 geplande runs; nog geen volledige testsetscore.
+
+### Input 4 — run 1
+
+Notitie: `hip thrusts, 60kg, 4 x 12`. Dezelfde prompt v4 en modelinstelling `GPT 5.6 terra hoog`.
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| hip thrusts | 60kg | 4 | 12 |
+
+Cansu beoordeelt run 1 als correct. Run 2 nog uit te voeren. Voorlopig 7 correcte runs geregistreerd van 20 geplande runs; nog geen volledige testsetscore.
+
+### Input 4 — run 2
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| hip thrusts | 60kg | 4 | 12 |
+
+Cansu beoordeelt run 2 als correct. Beide antwoorden zijn identiek: input 4 is 2/2 correct. Dezelfde prompt en modelinstelling als run 1. Voorlopig 8 correcte runs geregistreerd van 20 geplande runs; nog geen volledige testsetscore.
+
+### Input 5 — run 1
+
+Notitie: `seated hamstring curl, 20kg, 4 x 12`. Dezelfde prompt v4 en modelinstelling `GPT 5.6 terra hoog`.
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| seated hamstring curl | 20kg | 4 | 12 |
+
+Cansu beoordeelt run 1 als correct. Run 2 nog uit te voeren. Voorlopig 9 correcte runs geregistreerd van 20 geplande runs; nog geen volledige testsetscore.
+
+### Input 5 — run 2
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| seated hamstring curl | 20kg | 4 | 12 |
+
+Cansu beoordeelt run 2 als correct. Beide antwoorden zijn identiek: input 5 is 2/2 correct. Dezelfde prompt en modelinstelling als run 1. Tussenstand: 10/10 uitgevoerde runs correct, op 5 inputs elk tweemaal getest. Nog 10 van de 20 geplande runs uit te voeren; dit is geen score op de volledige testset.
+
+### Input 6 — run 1
+
+Notitie: `cable strght arm pull down 20kg 3x12 + laatste set tot faillure`. Dezelfde prompt v4 en modelinstelling `GPT 5.6 terra hoog`.
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| cable straight arm pull down | 20kg | 3 | 12, 12, tot failure (aantal onbekend) |
+
+Cansu beoordeelt dit als **F1 — verkeerd antwoord**: 3 sets in plaats van de vooraf bedoelde 4, met twee sets van 12 in plaats van drie vóór de extra set tot failure. Spelling en gewicht correct; failure is behouden. Beperking: de oorspronkelijke notitie is dubbelzinnig en Cansu's verduidelijking van het aantal sets is niet meegestuurd. Run 2 nog uit te voeren. Tussenstand: 10/11 uitgevoerde runs correct; nog geen volledige testsetscore.
+
+### Input 6 — run 2
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| cable straight arm pull down | 20kg | 3 | 12, 12, tot failure (aantal onbekend) |
+
+Cansu beoordeelt ook run 2 als **F1 — verkeerd antwoord**, om dezelfde reden als run 1. Beide antwoorden zijn identiek; geen F6 waargenomen. Dezelfde prompt en modelinstelling. Input 6 is 0/2 correct ten opzichte van het vooraf bedoelde antwoord; de dubbelzinnigheid blijft een beperking. Tussenstand: 10/12 uitgevoerde runs correct, met twee F1-runs; nog geen volledige testsetscore.
+
+### Input 7 — run 1 (ook een voorbeeld in de prompt)
+
+Notitie: `Dumbbell Row (Single‑Arm), 4 x 15`. Dezelfde prompt v4 en modelinstelling `GPT 5.6 terra hoog`.
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| Dumbbell Row (Single‑Arm) | onbekend | 4 | 15 |
+
+Cansu beoordeelt run 1 als correct. Deze input staat met antwoord als voorbeeld in de prompt en is dus geen ongeziene testinput. Run 2 nog uit te voeren. Tussenstand over alle uitgevoerde runs: 11/13 correct, waarvan 1/1 op de voorbeeldinput en 10/12 op de overige inputs; nog geen volledige testsetscore.
+
+### Input 7 — run 2 (ook een voorbeeld in de prompt)
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| Dumbbell Row (Single‑Arm) | onbekend | 4 | 15 |
+
+Cansu beoordeelt run 2 als correct. Beide antwoorden zijn identiek: input 7 is 2/2 correct. Dezelfde prompt en modelinstelling. Deze voorbeeldinput blijft apart herkenbaar. Tussenstand: 12/14 uitgevoerde runs correct, waarvan 2/2 op de voorbeeldinput en 10/12 op de overige inputs; nog geen volledige testsetscore.
+
+### Input 8 — run 1
+
+Notitie: `dumbbell pullover, eerst 10kg, dan 12, dan 14 3xtot faillure`. Dezelfde prompt v4 en modelinstelling `GPT 5.6 terra hoog`.
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| dumbbell pullover | 10kg, 12, 14 | 3 | tot failure (aantal onbekend), tot failure (aantal onbekend), tot failure (aantal onbekend) |
+
+Cansu beoordeelt run 1 als correct. Run 2 nog uit te voeren. Tussenstand: 13/15 uitgevoerde runs correct, waarvan 2/2 op de voorbeeldinput en 11/13 op de overige inputs; nog geen volledige testsetscore.
+
+### Input 8 — run 2
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| dumbbell pullover | 10kg, 12, 14 | 3 | tot failure (aantal onbekend), tot failure (aantal onbekend), tot failure (aantal onbekend) |
+
+Cansu beoordeelt run 2 als correct. Beide antwoorden zijn identiek: input 8 is 2/2 correct. Dezelfde prompt en modelinstelling. Tussenstand: 14/16 uitgevoerde runs correct, waarvan 2/2 op de voorbeeldinput en 12/14 op de overige inputs; nog geen volledige testsetscore.
+
+### Input 9 — run 1
+
+Notitie: `faceplls, 30kg, 4, laatste set tot faillure`. Dezelfde prompt v4 en modelinstelling `GPT 5.6 terra hoog`.
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| face pulls | 30kg | 4 | onbekend, onbekend, onbekend, tot failure (aantal onbekend) |
+
+Cansu beoordeelt run 1 als correct. De laatste set tot failure blijft vermeld. Run 2 nog uit te voeren. Tussenstand: 15/17 uitgevoerde runs correct, waarvan 2/2 op de voorbeeldinput en 13/15 op de overige inputs; nog geen volledige testsetscore.
+
+### Input 9 — run 2
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| face pulls | 30kg | 4 | onbekend, onbekend, onbekend, tot failure (aantal onbekend) |
+
+Cansu beoordeelt run 2 als correct. Beide antwoorden zijn identiek: input 9 is 2/2 correct. Dezelfde prompt en modelinstelling. Tussenstand: 16/18 uitgevoerde runs correct, waarvan 2/2 op de voorbeeldinput en 14/16 op de overige inputs; nog geen volledige testsetscore.
+
+### Input 10 — run 1
+
+Notitie: `lat puldwon, 35kg, 3 sets, 12 herhalingen per set`. Dezelfde prompt v4 en modelinstelling `GPT 5.6 terra hoog`.
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| lat pulldown | 35kg | 3 | 12 |
+
+Cansu beoordeelt run 1 als correct, inclusief de spellingcorrectie. Run 2 nog uit te voeren. Tussenstand: 17/19 uitgevoerde runs correct, waarvan 2/2 op de voorbeeldinput en 15/17 op de overige inputs; nog geen volledige testsetscore.
+
+### Input 10 — run 2
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| lat pulldown | 35kg | 3 | 12 |
+
+Cansu beoordeelt run 2 als correct. Beide antwoorden zijn identiek: input 10 is 2/2 correct. Dezelfde prompt en modelinstelling.
+
+### Eindresultaat volledige hertestronde v4
+
+**18/20 runs correct (90%; n = 10 inputs, 2 runs per input).** Twee F1-runs bij input 6; geen F2–F5-fouten geregistreerd. Bij alle tien inputs waren de twee gedeelde antwoorden identiek; geen F6 waargenomen in deze ronde. Identieke antwoorden betekenen niet automatisch correcte antwoorden.
+
+| Input | Correcte runs | Fouten / bijzonderheid |
+|---|---|---|
+| 1–5 | elk 2/2 | Geen |
+| 6 | 0/2 | Tweemaal F1; dubbelzinnige notitie |
+| 7 | 2/2 | Input en antwoord staan ook als voorbeeld in de prompt |
+| 8–10 | elk 2/2 | Geen |
+
+Zonder de voorbeeldinput 7: **16/18 correct (88,9%; n = 9, 2 runs)**. De testset is klein, eerder gebruikt bij promptverbeteringen en bevat een dubbelzinnige input. Dit is geen onafhankelijke test met nieuwe notities. V3 scoorde eerder 17/20; v4 scoort nu 18/20, maar input 7 is vanaf v4 een promptvoorbeeld. De scorevergelijking moet met die beperking worden gelezen. De eerdere fouten bij inputs 8 en 9 kwamen in deze ronde niet terug; bij input 6 blijft het bedoelde aantal sets verkeerd geïnterpreteerd.
+
+## Gerichte hertest v5 — input 6, verwacht antwoord vooraf
+
+Notitie: `cable strght arm pull down 20kg 3x12 + laatste set tot faillure`. Prompt: `prompt-v5.md`. Gepland: twee runs in nieuwe lege gesprekken met dezelfde modelinstelling `GPT 5.6 terra hoog`. Nog geen runs uitgevoerd.
+
+Vooraf afgesproken: bij het dubbelzinnige totale aantal sets verwacht Cansu nu `onbekend`. Cansu geeft voor Herhalingen zelf op: `3 x 12, laatste set: tot failure (aantal onbekend)`. Oefening en gewicht blijven volgens de bestaande afspraken.
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| cable straight arm pull down | 20kg | onbekend | 3 x 12, laatste set: tot failure (aantal onbekend) |
+
+Deze uitvoer legt geen totaal aantal sets vast. De uitvoerafspraak is gewijzigd ten opzichte van het eerdere verwachte antwoord van vier sets. Resultaten blijven daarom apart van de v4-score van 18/20 en zijn geen zuivere vergelijking onder gelijke beoordelingsregels.
+
+### V5 — input 6, run 1
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| cable straight arm pull down | 20kg | onbekend | 3 x 12, laatste set: tot failure (aantal onbekend) |
+
+Cansu beoordeelt dit als correct volgens de vooraf vastgelegde v5-uitvoerafspraak. Voorlopig 1/1 gerichte run correct op één input; run 2 nog uit te voeren. Geen volledige v5-testsetscore.
+
+### V5 — input 6, run 2
+
+Antwoord gedeeld door Cansu:
+
+| Oefening | Gewicht | Sets | Herhalingen |
+|---|---|---|---|
+| cable straight arm pull down | 20kg | onbekend | 3 x 12, laatste set: tot failure (aantal onbekend) |
+
+Cansu beoordeelt ook run 2 als correct. Beide antwoorden zijn identiek. Gerichte v5-hertest: **2/2 correct (n = 1 input, 2 runs)** volgens de gewijzigde, vooraf vastgelegde uitvoerafspraak. Geen F6 waargenomen. Dit is geen volledige v5-testsetscore; v4 blijft 18/20 (90%). Het verwachte aantal sets is veranderd van 4 naar onbekend, dus deze resultaten zijn geen scorevergelijking onder gelijke beoordelingsregels.

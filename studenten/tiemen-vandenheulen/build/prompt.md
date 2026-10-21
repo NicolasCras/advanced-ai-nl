@@ -1,6 +1,6 @@
-# Prompt v2 — Review-sorteerder voor evenementen
+# Prompt v1 — Review-sorteerder voor evenementen
 
-Kies alle categorieën die duidelijk in de review voorkomen, want zo ziet de organisator meteen welke thema’s bezoekers noemen.
+Kies alle categorieën die duidelijk in de review voorkomen, zodat de organisator meteen ziet welke thema’s bezoekers noemen.
 
 ## Categorieën
 
@@ -11,9 +11,9 @@ Kies alle categorieën die duidelijk in de review voorkomen, want zo ziet de org
 - `wachttijden`: wachten aan de ingang, bar, toiletten of andere rijen.
 - `catering`: eten, drinken, aanbod of bediening aan bar en eetstanden.
 - `veiligheid`: beveiliging, onveilige situaties, nooduitgangen of toezicht.
-- `andere`: gebruik dit alleen als geen van de bovenstaande categorieën duidelijk past. Gebruik `andere` nooit samen met een ander label.
+- `andere`: gebruik dit alleen als geen van de bovenstaande categorieën duidelijk past.
 
-Kies een categorie alleen wanneer de review er voldoende informatie over geeft. Voeg geen categorie toe op basis van een aanname. Kies `andere` als de review te vaag is of over een ander onderwerp gaat, want een onterechte categorie is niet bruikbaar voor de organisator.
+Kies een categorie alleen wanneer de review er voldoende informatie over geeft. Voeg geen categorie toe op basis van een aanname. Kies `andere` als de review te vaag is of over een ander onderwerp gaat.
 
 Geef alleen deze JSON terug, zonder extra tekst:
 
@@ -21,17 +21,10 @@ Geef alleen deze JSON terug, zonder extra tekst:
 {"labels": ["categorie"], "reden": "korte verwijzing naar de review"}
 ```
 
-Voorbeelden:
-
-- Review: “De rij aan de ingang duurde twintig minuten."
-  Antwoord: `{"labels": ["wachttijden"], "reden": "De bezoeker noemt een lange rij aan de ingang."}`
-- Review: “Het eten was koud, maar de locatie was goed bereikbaar.”
-  Antwoord: `{"labels": ["catering", "locatie"], "reden": "De review gaat over koud eten en bereikbaarheid."}`
-- Review: “Ik vond het een fijne avond.”
-  Antwoord: `{"labels": ["sfeer"], "reden": "De bezoeker beoordeelt de algemene beleving positief."}`
-
 ## Review
 
-<plak hier één bezoekersreview>
 
-Bijvoorbeeld:
+Leuke locatie en genoeg te doen. Het was op sommige momenten wel erg druk.
+
+
+

@@ -17,3 +17,6 @@ Tweede voorbeeld (VanEck Defense, `voorbeeld-2.md`) toegevoegd, plus een uitzond
 
 ## Geplande wijziging (na Run 1)
 De lopende kosten zijn al aangepast vóór Run 1 (optellen, met twee voorbeelden). De ene wijziging na Run 1 kies ik op de fouten die Run 1 echt laat zien. Een eerdere gedachte, beheer en transactie apart teruggeven (negen velden), is niet gedaan.
+
+## Week 4
+Kosten gemeten en uitgerekend hoe duur alles is: kost per run, per maand (1x, 10x, 1.000x) en de waarde tegenover het werk met de hand. Details in `kosten.md`.

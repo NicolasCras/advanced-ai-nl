@@ -4,16 +4,18 @@ Korte notities na een oefening omzetten naar oefening, gewicht, sets en herhalin
 
 ## Status
 
-De taak is gekozen op 7 oktober 2026. De huidige prompt v3 is getest op tien echte trainingsnotities, elk tweemaal: **17 van 20 runs correct (85%)** volgens inhoud en afgesproken uitvoer. Eén run heeft F4 (verkeerde uitvoervorm), twee runs F3 (gemiste informatie). Bij input 8 is F6 waargenomen: wisselende naleving van de uitvoerregel.
+De bewaarde prompt v4 (`prompt-v4.md`) is op 14 oktober 2026 getest op tien oorspronkelijke trainingsnotities, elk tweemaal: **18/20 runs correct (90%; n = 10, 2 runs)** volgens Cansu's beoordelingen. Twee F1-fouten bij input 6: de dubbelzinnige notitie is als drie sets geïnterpreteerd, terwijl Cansu vier bedoelde. Bij alle tien inputs waren beide antwoorden identiek; geen F6 waargenomen.
 
-De testset is klein en input 6 is dubbelzinnig. Uitvoerafspraken zijn tussen versies gewijzigd; scores zijn geen zuivere vergelijking onder dezelfde regels. Cansu rapporteert het gebruikte model/de instelling in ChatGPT als `GPT 5.6 terra hoog` (letterlijk overgenomen; geen technische model-ID vastgesteld). Automatisch opslaan en het laatste gewicht opzoeken zijn nog niet gebouwd.
+Input 7 staat met antwoord als voorbeeld in de prompt. Zonder deze input is de score **16/18 (88,9%; n = 9, 2 runs)**. De kleine testset is eerder gebruikt voor promptverbeteringen en is geen onafhankelijke test. Model/instelling door Cansu gerapporteerd als `GPT 5.6 terra hoog`; technische model-ID niet vastgesteld. Automatisch bewaren, terugzoeken en wekelijkse progressievergelijking zijn nog niet gebouwd. Tijdwinst is nog niet gemeten. V3 scoorde eerder 17/20 (85%); eerdere resultaten blijven bewaard.
+
+De huidige prompt is v5 (`prompt.md` en `prompt-v5.md`). Alleen de regel voor een dubbelzinnig totaal aantal sets is verduidelijkt. Input 6 is apart tweemaal correct getest (2/2; n = 1, 2 runs) volgens de nieuwe vooraf vastgelegde uitvoerafspraak: Sets = onbekend. Beide antwoorden identiek. V5 heeft nog geen volledige testsetscore; de gewijzigde uitvoerafspraak verhindert een zuivere scorevergelijking met v4.
 
 ## Bestanden
 
 - `promptaudit.md`: annotaties per regel van v4 op basis van de gezamenlijke bespreking; door Cansu nagelezen en goedgekeurd op 8 oktober.
 
 - `taak.md`: de goedgekeurde taak en de reden voor de overstap.
-- `prompt.md`: v4; bevat drie door Cansu aangeleverde voorbeelden en haar regel met een waarom. Inputs 8 en 9 elk tweemaal correct hertest (4/4).
+- `prompt.md`: v5; zie de actuele status hierboven. De bewaarde v4 bevat drie door Cansu aangeleverde voorbeelden en haar regel met een waarom. Inputs 8 en 9 elk tweemaal correct hertest (4/4).
 - `prompt-v3.md`: geteste v3, bewaard vóór het toevoegen van voorbeelden.
 - `prompt-v2.md`: prompt met de failure-regel, vóór de wijziging voor spelfouten.
 - `prompt-v1.md`: oorspronkelijke prompt, bewaard voor vergelijking met eerdere tests.

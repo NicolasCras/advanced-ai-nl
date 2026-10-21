@@ -3,7 +3,7 @@
 Bestand: `studenten/jouw-naam/posts/week-01.md`. Halve pagina. Geen inleiding, geen conclusie.
 
 ```markdown
-# Week 1 — <titel in je eigen woorden>
+# Week 1: <titel in je eigen woorden>
 
 ## Wat heb ik tot nu toe met AI gedaan?
 <Concreet. Welke tool, waarvoor, wat kwam eruit.>

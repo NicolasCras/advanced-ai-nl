@@ -1,0 +1,18 @@
+{
+  "session": "01a13fd7-9ffa-75f0-8673-fd7cad794390",
+  "start": "2026-10-15T14:00:35.512Z",
+  "last_usage": "2026-10-15T14:03:29.387Z",
+  "model": "GPT-6.1-Sol",
+  "input_tokens": 809064,
+  "cached_input_tokens": 754944,
+  "uncached_input_tokens": 54120,
+  "output_tokens": 4076,
+  "reasoning_output_tokens_included": 148,
+  "total_tokens": 813140,
+  "scope": "Volledige agentrun: extractie, JSON-opslag, Excel-update en ECB-koersen; inclusief context, skills en pdf-lezerinstallatie. Rapportdownload vooraf uitgesloten. Geen afzonderlijk gemeten prompt-only API-verbruik.",
+  "pricing": "Lesaanname per miljoen: input 2 USD, cache lezen 0.10 USD, output 10 USD",
+  "cost_usd": 0.2244944,
+  "eur_per_usd": 0.8922198429693077,
+  "fx_date": "2026-10-15",
+  "cost_eur": 0.20029835831548895
+}

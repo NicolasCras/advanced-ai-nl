@@ -4,8 +4,8 @@
 - Student Marketing, jaar 2, Arteveldehogeschool
 - Eigen werk: Elevio, mijn bedrijf rond AI en automatisatie. Ik werk nu aan een
   betaald project van behoorlijke omvang voor een klant.
-- Andere projecten: OpMaat, een reisapp voor Holiways, en een vault waarin ik
-  reels opsla en uitwerk
+- Andere projecten: OpMaat, een offerte-app voor aannemers en zelfstandigen in de
+  bouw, en een vault waarin ik reels opsla en uitwerk
 
 ## Taal en toon
 - Schrijf Nederlands. Code en technische termen in het Engels.

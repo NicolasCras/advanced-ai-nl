@@ -26,3 +26,18 @@
 - Opnieuw gedraaid met v2: T02, T03 en T08, elk 2 keer. Oude versie: `prompt-v1.md`. Ruwe antwoorden: `runs-v2.txt`.
 - Resultaat: 6 op 6 juist, zelfde antwoorden als met v1. T02 en T03 blijven "onzeker", T08 blijft "nee". De regel maakte niets kapot, maar verbeterde ook niets meetbaar: v1 deed het al juist.
 - Nog geen bewijs: 3 inputs, 2 runs. Alle 11 inputs opnieuw draaien met v2 moet nog.
+
+## Week 4 — T01 met Haiku 4.5
+- T01 2 keer gedraaid met v2 op Haiku 4.5 (meting voor `kosten.md`). Run 1: "ja, grondwerk". Run 2: "onzeker, grondwerk". Op Haiku 5.5 2 keer "onzeker".
+- Mijn juiste antwoord blijft "ja". De grootte staat er niet in, maar dat geldt voor bijna alle aanvragen. Als dat al reden is voor "onzeker", zegt de tool bijna altijd onzeker en moet iemand alles toch zelf nalezen.
+- Fout van de tool: F6 (wisselend), ander antwoord bij dezelfde input.
+- Gevolg voor de prompt: de regel "onzeker als de grootte ontbreekt" is te streng. Nog niet aangepast. Ook T02 en T03 opnieuw bekijken.
+- Vorm: Haiku 4.5 zette het JSON-antwoord tussen ```json-tekens, terwijl de prompt "verder niets" vraagt. Geen F4, want vandaag leest een mens het antwoord. Wel een F4 als een programma het later automatisch moet lezen.
+
+## Week 4 — drie moeilijke inputs en volledige run v2
+- T12–T14 toegevoegd, alle drie Frans (Komen-Waasten): een uitbreiding van een woning (T12), een regularisatie (T13) en de sloop van een hekwerk met een regularisatie (T14). Juiste antwoorden vooraf geschreven.
+- Eerste runs T12–T14 (v2, Haiku 4.5, 18 oktober): "interessant" 2 op 6, "soort werk" 1 op 6. Fouten: F3, F4, F5, F2.
+- Volledige run: alle 14 inputs 2 keer met v2 op Haiku 4.5 (20 oktober). Ruwe antwoorden: `runs-v2-volledig.txt`.
+- T03 aangepast: "onzeker, afbraak" wordt "ja, beide". Zelfde regel als bij T01: een ontbrekende grootte is geen reden voor onzeker. En een uitbreiding vraagt fundering of buizen, zoals bij T12.
+- Resultaat: "interessant" 23 op 28, "soort werk" 25 op 28 (n = 14, 2 runs). Fouten: F6 × 4 (T01, T03, T09, T14), F3 × 3 (T12), F4 × 1 (T12).
+- Grootste probleem: wisselende antwoorden (F6) tussen ja en onzeker. T13 was nu wel 2 keer juist.
