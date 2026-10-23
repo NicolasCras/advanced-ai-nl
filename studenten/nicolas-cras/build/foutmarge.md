@@ -24,6 +24,12 @@ Score = aantal inputs (van 10) waarvan alle zes velden juist zijn.
 
 Foutmarge: v4 haalde alle drie runs 10 op 10. v5 haalde 9 op 10 in twee van de drie runs en 10 op 10 in de derde. Met deze testset en dit model deed v4 het dus niet slechter dan v5 — in deze 60 runs zelfs iets beter.
 
+## Mijn claim
+
+Mijn claim: "De regel die ik in v5 toevoegde (alleen als de sporter een training 'zwaar' noemt telt ze als hard, ook bij krachttraining) maakt mijn prompt beter dan v4." Bron: `log.md`, rij van 2026-10-11. De claim staat in die vorm niet letterlijk in mijn post van week 4; ik heb ze afgeleid uit het logboek.
+
+Bevestigd of ingetrokken: **ingetrokken**, want de bereiken overlappen. v4 haalde 10–10 op 10, v5 haalde 9–10 op 10 (n = 10, 3 runs per versie, Claude Sonnet 5.5). De laagste score van v5 (9) ligt niet hoger dan de hoogste score van v4 (10). Het verschil valt binnen de foutmarge: niet bewezen dat v5 beter is, en ook niet bewezen dat het slechter is.
+
 ## Fouten
 
 Alle fouten zitten in dezelfde input, T07, en in hetzelfde veld (Belasting), allebei bij v5:

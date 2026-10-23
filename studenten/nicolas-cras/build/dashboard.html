@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build-dashboard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+  :root {
+    --bg: #f6f5f1;
+    --card: #ffffff;
+    --text: #1c1b19;
+    --muted: #5f5d57;
+    --line: #e3e0d8;
+    --accent: #1f5fbf;
+    --ok: #1f7a4d;
+    --warn: #b4540a;
+    --bar: #d9d6cc;
+    --bar-fill: #1f5fbf;
+    --bar-old: #8a877e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141413;
+      --card: #1e1e1c;
+      --text: #f0eee8;
+      --muted: #a9a69c;
+      --line: #34332f;
+      --accent: #6aa3f0;
+      --ok: #5fc592;
+      --warn: #f0a15f;
+      --bar: #34332f;
+      --bar-fill: #6aa3f0;
+      --bar-old: #8a877e;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141413;
+    --card: #1e1e1c;
+    --text: #f0eee8;
+    --muted: #a9a69c;
+    --line: #34332f;
+    --accent: #6aa3f0;
+    --ok: #5fc592;
+    --warn: #f0a15f;
+    --bar: #34332f;
+    --bar-fill: #6aa3f0;
+    --bar-old: #8a877e;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-block: 24px 48px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .row span { min-width: 0; }
+  h1 { font-size: 1.5rem; margin: 0 0 4px; line-height: 1.2; }
+  .sub { color: var(--muted); margin: 0 0 24px; font-size: 0.9rem; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  h2 { font-size: 1.05rem; margin: 0 0 12px; line-height: 1.3; }
+  .big { font-size: 2.4rem; font-weight: 700; line-height: 1.1; margin: 0; }
+  .big small { font-size: 1rem; font-weight: 500; color: var(--muted); }
+  .muted { color: var(--muted); font-size: 0.9rem; }
+  .row { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-top: 1px solid var(--line); }
+  .row:first-of-type { border-top: 0; }
+  .row b { text-align: right; }
+  .badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 1.5px solid currentColor;
+  }
+  .badge.out { color: var(--warn); }
+  .badge.in { color: var(--ok); }
+  .range { margin: 14px 0 4px; }
+  .range .label { display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 4px; }
+  .track { position: relative; height: 14px; background: var(--bar); border-radius: 7px; }
+  .fill { position: absolute; top: 0; bottom: 0; border-radius: 7px; background: var(--bar-fill); min-width: 6px; }
+  .fill.old { background: var(--bar-old); }
+  .scale { display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
+  .tablewrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 8px 6px; border-top: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); font-size: 0.8rem; border-top: 0; }
+  td.n, th.n { text-align: right; white-space: nowrap; }
+  .net { font-size: 1.6rem; font-weight: 700; line-height: 1.2; margin: 4px 0; }
+  .weak { border-left: 4px solid var(--warn); }
+  ul { margin: 8px 0 0; padding-left: 20px; }
+  li { margin: 4px 0; }
+  .foot { color: var(--muted); font-size: 0.8rem; margin-top: 8px; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Build-dashboard</h1>
+<p class="sub">Trainingsanalyse-tool voor een online sportcoach. Alle cijfers komen uit mijn bestanden. Ontbreekt er één: "nog niet gemeten".</p>
+
+<section>
+  <h2>Netto per jaar</h2>
+  <p class="big">7.312–15.746 <small>€ per jaar</small></p>
+  <p class="muted">Netto waarde voor een online sportcoach met ongeveer 25 sporters, bij mijn score van 28 op 30. Bereik met mijn laagste en hoogste score (9–10 op 10): 7.021–16.996 €. Zwakste cijfer: de 45 minuten nakijken per week, geschat en niet gemeten. De hele berekening staat onderaan bij "Value chain".</p>
+</section>
+
+<section>
+  <h2>Mijn score met foutmarge</h2>
+  <p class="big">9–10 <small>op 10</small></p>
+  <p class="muted">Laatste versie (v5). n = 10 inputs, 3 runs: 9, 9 en 10 op 10. Samen 28 op 30. Model: Claude Sonnet 5.5.</p>
+
+  <div class="range">
+    <div class="label"><span>v4 (vorige versie)</span><b>10–10</b></div>
+    <div class="track"><div class="fill old" style="left:calc(100% - 6px);width:6px"></div></div>
+  </div>
+  <div class="range">
+    <div class="label"><span>v5 (laatste versie)</span><b>9–10</b></div>
+    <div class="track"><div class="fill" style="left:90%;right:0"></div></div>
+    <div class="scale"><span>0</span><span>5</span><span>10</span></div>
+  </div>
+  <p class="foot">Foutmarge = laagste en hoogste score over 3 runs op dezelfde 10 inputs. Alle fouten zaten in één input, in één veld (Belasting).</p>
+</section>
+
+<section>
+  <h2>Mijn claim</h2>
+  <p><span class="badge out">Ingetrokken</span></p>
+  <p><b>Wat ik beweerde:</b> de wijziging van v4 naar v5 maakt de tool beter. De wijziging: een training die de sporter "zwaar" noemt telt als hard, ook bij krachttraining.</p>
+  <p><b>Hoe ik beslis:</b> bevestigd als de laagste score van v5 hoger ligt dan de hoogste score van v4. Ingetrokken als de bereiken overlappen, want dan valt het verschil binnen de foutmarge.</p>
+  <p><b>Uitkomst:</b> v4 haalde 10–10, v5 haalde 9–10. De bereiken overlappen (v5 haalde in één run ook 10). Het verschil valt dus binnen de foutmarge en mijn claim is ingetrokken.</p>
+  <p><b>Wat dit betekent:</b> niet bewezen dat v5 beter is. De runs tonen ook niet dat v5 slechter is: v5 haalde in één run 10 op 10 en de twee misses zaten in dezelfde input. Met 10 inputs en 3 runs kan één run meer of minder de rangorde veranderen.</p>
+  <p class="foot">Zelfde model voor beide versies (Claude Sonnet 5.5), zelfde 10 inputs, elke run in een nieuwe sessie zonder tools. Uit week 4: 18 op 20 juist (n = 10, 2 runs), vóór de foutmargetest en zonder bereik over 3 runs.</p>
+</section>
+
+<section>
+  <h2>Vier setups</h2>
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr><th>Setup</th><th class="n">Score</th><th>Binnen 9–10?</th><th class="n">€ / run</th><th class="n">€ / jaar*</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>A: Opus 5.5, standaard</td><td class="n">10 op 10</td><td>ja</td><td class="n">0,037</td><td class="n">44,17</td></tr>
+        <tr><td>B: Sonnet 5.5, standaard</td><td class="n">9 op 10</td><td>ja</td><td class="n">0,017</td><td class="n">20,09</td></tr>
+        <tr><td>C: Sonnet 5.5, laagste niveau</td><td class="n">9 op 10</td><td>ja</td><td class="n">0,014</td><td class="n">17,28</td></tr>
+        <tr><td>D: Haiku 5.5, standaard</td><td class="n">8 op 10</td><td>nee</td><td class="n">0,0016</td><td class="n">1,94</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="foot">Zelfde prompt (v5), zelfde 10 inputs, 1 run per input per setup. Kost gemeten buiten Claude Code, dus enkel prompt, input en antwoord. "Binnen 9–10?" vergelijkt met mijn foutmarge van v5 op Sonnet 5.5 standaard. * Berekend door mij, niet gemeten: kost per run in dollar × 0,90 × 1.200 runs per jaar (100 per maand × 12). A, B en C vallen binnen de foutmarge en zijn op score niet te onderscheiden. B en C faalden op dezelfde input, A niet. Haiku zakte buiten de foutmarge en faalde op twee andere inputs, allebei in hetzelfde veld, en gebruikte veel meer output-tokens (gemiddeld 1.349 tegenover 435 tot 514). Met 1 run per input kan één run meer of minder de score veranderen. Mijn gok voor de modeltest heb ik niet vooraf opgeschreven.</p>
+</section>
+
+<section>
+  <h2>Kost per run en per jaar</h2>
+  <div class="row"><span>Per run, gemeten in Claude Code (incl. context van de tool)</span><b>0,056 €</b></div>
+  <div class="row"><span>Per run, alleen mijn deel (schatting)</span><b>0,0056 €</b></div>
+  <div class="row"><span>Per maand bij 100 runs, via Claude Code</span><b>5,60 €</b></div>
+  <div class="row"><span>Per jaar bij 100 runs, via Claude Code (5,60 × 12)</span><b>67 €</b></div>
+  <div class="row"><span>Per jaar bij 100 runs, alleen mijn deel (0,56 × 12, door mij berekend)</span><b>6,72 €</b></div>
+  <p class="foot">Sonnet 5.5: 2 dollar per miljoen tokens in, 10 uit. Koers 1 dollar = 0,90 euro (aanname). 100 runs per maand = 25 sporters × 4 weken. Mijn deel is geschat (tekens ÷ 3,5), niet gemeten.</p>
+</section>
+
+<section>
+  <h2>Value chain</h2>
+  <p class="muted">Voor een online sportcoach met ongeveer 25 sporters, 20 uur werk per week. Alles hieronder is een schatting van mij, tenzij er "gemeten" bij staat. Niets is van de coach zelf.</p>
+
+  <div class="row"><span>1. Met de hand: 20 min × 25 sporters</span><b>8 u 20 / week</b></div>
+  <div class="row"><span>Score (gemeten, n = 10, 3 runs)</span><b>28 op 30 (9–10 op 10)</b></div>
+  <div class="row"><span>2. Met de tool: nakijken</span><b>45 min / week</b></div>
+  <div class="row"><span>Draaien (niet gemeten, ik reken 0)</span><b>0 min</b></div>
+  <div class="row"><span>Fouten herstellen: 25 × 6,7% × 20 min</span><b>33 min / week</b></div>
+  <div class="row"><span>Met de tool samen</span><b>78 min / week</b></div>
+  <div class="row"><span>3. Winst</span><b>7 u 02 / week</b></div>
+  <div class="row"><span>4–5. Uren per jaar (52 weken)</span><b>365 u</b></div>
+  <div class="row"><span>6. Uurwaarde (omzet per uur van een online coach)</span><b>20,19–43,27 €</b></div>
+  <div class="row"><span>Waarde per jaar</span><b>7.379–15.813 €</b></div>
+  <div class="row"><span>7. Kost van de tool per jaar</span><b>67 €</b></div>
+  <p class="muted" style="margin-bottom:0">8. Netto per jaar (score 28 op 30)</p>
+  <p class="net">7.312–15.746 €</p>
+
+  <div class="tablewrap" style="margin-top:12px">
+    <table>
+      <thead><tr><th>Periode</th><th class="n">Tijdswinst</th><th class="n">Waarde</th></tr></thead>
+      <tbody>
+        <tr><td>Per dag</td><td class="n">1 u 24</td><td class="n">28–61 €</td></tr>
+        <tr><td>Per week</td><td class="n">7 u 02</td><td class="n">142–304 €</td></tr>
+        <tr><td>Per maand</td><td class="n">30 u</td><td class="n">615–1.318 €</td></tr>
+        <tr><td>Per jaar</td><td class="n">365 u</td><td class="n">7.379–15.813 €</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 style="margin-top:20px">9. Bereik door de foutmarge</h2>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Score</th><th class="n">Netto bij 20,19 €/u</th><th class="n">Netto bij 43,27 €/u</th></tr></thead>
+      <tbody>
+        <tr><td>Laagste: 9 op 10</td><td class="n">7.021 €</td><td class="n">15.121 €</td></tr>
+        <tr><td>Midden: 28 op 30</td><td class="n">7.312 €</td><td class="n">15.746 €</td></tr>
+        <tr><td>Hoogste: 10 op 10</td><td class="n">7.896 €</td><td class="n">16.996 €</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><b>Bereik: ongeveer 7.000–17.000 € per jaar.</b> De foutmarge verschuift het netto met ongeveer 875 € (bij 20,19 €/u) tot 1.880 € (bij 43,27 €/u). De uurwaarde verschuift het veel meer.</p>
+  <p class="foot">Fouten herstellen = foutdeel (uit de score) × 20 min per fout. Tijd per stap van het handwerk, draaitijd en uurkost voor de werkgever (bruto × 1,5): nog niet gemeten. De coach is zelfstandig, dus ik reken met omzet per uur. De prijs (70–150 € per sporter per maand) komt van een zoekoverzicht van 15 oktober 2026 en is een gemiddelde voor online coaches, niet de prijs van deze coach. 5 werkdagen per week, 52 weken per jaar. Kost van de tool gemeten in Claude Code (5,60 € per maand).</p>
+</section>
+
+<section class="weak">
+  <h2>Mijn zwakste cijfer</h2>
+  <p><b>De 45 minuten nakijken per week</b>, voor alle 25 sporters samen (ongeveer 1,8 minuut per sporter). Geschat, niet gemeten.</p>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Nakijken</th><th class="n">Uren per jaar</th><th class="n">Netto per jaar</th></tr></thead>
+      <tbody>
+        <tr><td>45 min (schatting)</td><td class="n">365 u</td><td class="n">7.312–15.746 €</td></tr>
+        <tr><td>90 min (het dubbele)</td><td class="n">326 u</td><td class="n">6.525–14.058 €</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Duurt het nakijken dubbel zo lang, dan daalt het netto met ongeveer 790 tot 1.690 €. Dat is ongeveer evenveel als het effect van de foutmarge (875 tot 1.880 €). Het netto blijft positief.</p>
+  <p class="foot">Twee andere schattingen verschuiven het netto sterker en zijn ook niet gemeten. De score van 93% (getest op eigen inputs, nog niet op echte notities): bij de helft (47%) blijft er 3.229–6.995 € netto over. De 20 minuten per sporter met de hand: bij 10 minuten blijft er 2.937–6.371 € over.</p>
+</section>
+
+<p class="foot">Bronnen: build/foutmarge.md, build/modellen.md, build/kosten.md, build/waarde.md.</p>
+
+</main>
+</body>
+</html>
