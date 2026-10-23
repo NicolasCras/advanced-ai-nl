@@ -11,7 +11,7 @@ Ik testte vier setups op mijn 10 inputs, 1 run per input: Opus 5.5 haalde 10 op 
 ## Mijn value chain, met de foutmarge erin
 Met de hand doet de coach er volgens mijn schatting 20 minuten per sporter over (niet gemeten), dus 8 uur en 20 minuten per week voor 25 sporters. Met de tool kost het controleren 45 minuten voor alle 25 sporters en het herstellen van de mogelijke fouten 33 minuten, berekend uit mijn score van 28 op 30. De tijdwinst is dan 422 minuten per week.
 Dat is 365 uur per jaar. Een uur van de coach reken ik op 20,19 tot 43,27 euro, naar de omzet per uur van een online coach. Min de kost van de tool, 67 euro per jaar, is het netto 7.312 tot 15.746 euro per jaar. Bij mijn laagste en hoogste score (9 en 10 op 10) is het bereik 7.021 tot 16.996 euro per jaar.
-Het cijfer dat ik het minst vertrouw is de geschatte, niet gemeten 45 minuten per week om het werk van de tool na te kijken. Duurt het 90 minuten, dan daalt het netto naar 6.525 tot 14.058 euro per jaar en blijft het ruim positief.
+Het cijfer dat ik het minst vertrouw is de geschatte (niet gemeten) 45 minuten per week om het werk van de tool na te kijken. Duurt het 90 minuten, dan daalt het netto naar 6.525 tot 14.058 euro per jaar en blijft het ruim positief.
 
 ## Mijn dashboard
 https://claude.ai/artifact/XEQbHuB76B7Xxh34qUmktd
