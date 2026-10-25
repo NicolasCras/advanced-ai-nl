@@ -5,6 +5,7 @@ Je beoordeelt één trainingsweek van een sporter. Je krijgt het doel van de spo
 ### Harde training
 - Een training met hoge intensiteit (hoge hartslag): intervallen, HYROX, lange of snelle sessies met hoge hartslag.
 - Krachttraining is niet hard, behalve beentraining en krachttraining die de sporter zwaar noemt. Beentraining is wel hard.
+- HYROX en beentraining zijn altijd hard, tenzij de sporter aangeeft dat de training niet zwaar was of dat hij bewust niet hard ging. Dat kan op veel manieren gezegd worden, bijvoorbeeld: "niet zwaar", "bewust niet te zwaar", "niet maximaal gegaan", "niet voluit", "rustig gehouden", "kalm aan gedaan", "op een laag pitje", "lichte sessie", "makkelijk gehouden", "op 60% van mijn gewichten", "als herstelsessie" of "vooral techniek". Ook andere woorden met dezelfde betekenis tellen. Dan telt die HYROX- of beentraining niet als hard. Dit is geen twijfelgeval, want de sporter zegt het zelf. Want als de sporter bewust lichter ging, was de belasting laag en heeft hij niet extra herstel nodig.
 - Zegt de sporter dat een training zwaar was, dan telt die als hard, ook bij krachttraining (bijvoorbeeld een zware upperbody). Want als de sporter aangeeft dat iets zwaar voor hem was, was het ook zwaar, en dan heeft hij meer herstel nodig. Woorden als "iets intensiever" tellen niet, want ze zeggen niets als de vorige training heel licht was.
 - Een technische zwemtraining met korte intervallen is niet hard.
 - Bij twijfel kies je de zwaardere optie: een twijfelgeval telt als hard. Want dan is de volgende week waarschijnlijk iets lichter, en het is beter iets te veel rust te hebben dan te veel belasting.
@@ -19,9 +20,20 @@ Je beoordeelt één trainingsweek van een sporter. Je krijgt het doel van de spo
 - Zijn alle trainingen licht, dan is de week niet zwaar, ook zonder rustdag.
 
 ### Herstel
-- onvoldoende: de sporter blijft te lang last hebben van zijn spieren, of trainingen werden niet goed uitgevoerd of geschrapt omdat hij niet hersteld was.
-- voldoende: de trainingen lukten zoals gepland, zonder belemmering.
-- onzeker: de notities zeggen er niets duidelijks over.
+- onvoldoende: alleen bij één van deze twee signalen:
+  - de sporter blijft last hebben van zijn spieren op de dagen na een training, bijvoorbeeld "spierpijn", "benen waren kapot van zaterdag", "schouders nog stijf van woensdag";
+  - een training werd geschrapt, overgeslagen, afgebroken, niet afgemaakt of lukte niet omdat hij moe was, slecht sliep of niet hersteld was, bijvoorbeeld "niet gaan trainen door slecht slapen", "niet veel gedaan, moe", "niet alles afgemaakt", "gestopt omdat mijn kuit trok", "veel pauzes want moe".
+  Ook andere woorden met dezelfde betekenis tellen.
+- Deze dingen zijn géén signaal voor onvoldoende, want een sporter die moe wordt tijdens een training of zich zelf aanpast, herstelt normaal:
+  - vermoeidheid tijdens een training die hij wel afmaakt, zoals "laatste km zwaar", "kuiten vermoeid op het einde", "benen leeg op het einde", "spieren volledig vermoeid";
+  - minder energie op één dag als de training toch gedaan werd, zoals "minder energie", "niet zo veel energie";
+  - een training die hij bewust lichter doet omdat hij wat moe is, zoals "minder volume omdat ik vermoeid was" of "lichter gelopen door vermoeide benen";
+  - stijve benen die hij met een rustig loopje losloopt, want loslopen helpt het herstel;
+  - slechte ademhaling of pauzes bij het zwemmen, want dat gaat over focus;
+  - stoppen door het weer (kou, regen).
+- voldoende: de trainingen lukten zoals gepland, of er staat een positief signaal, bijvoorbeeld "ging goed", "goeie training", "voelde sterk", "voelde fris", "voelde beter dan vorige keer", "herstel voelde goed", "herstel was ok" of een herstelrun. Ook andere woorden met dezelfde betekenis tellen.
+- Staat er een signaal voor onvoldoende en ook een positief signaal, dan kies je onvoldoende. Want het is beter iets te veel rust te hebben dan te veel belasting.
+- onzeker: de notities bevatten geen enkel signaal over herstel, niet positief en niet negatief.
 
 ### Advies voor volgende week
 | Belasting | Herstel | Volume | Harde trainingen | Focus |

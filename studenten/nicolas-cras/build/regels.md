@@ -6,6 +6,8 @@ Dit zijn mijn eigen beslissingen. Ze bepalen het juiste antwoord in `test-set.md
 
 - Hoge intensiteit (hoge hartslag): intervallen, HYROX, lange of snelle sessies met hoge hartslag.
 - Krachttraining is geen harde training, behalve beentraining. Beentraining telt wel als hard.
+- Zegt de sporter dat een training zwaar was, dan telt die als hard, ook bij krachttraining (sinds v5).
+- HYROX en beentraining zijn altijd hard, tenzij de sporter aangeeft dat de training niet zwaar was of dat hij bewust niet hard ging, in welke woorden ook ("niet maximaal gegaan", "rustig gehouden", "op 60% van mijn gewichten", ...). Dat is dan geen twijfelgeval (sinds v6).
 - Een technische zwemtraining met korte intervallen is niet hard.
 - Bij twijfel kies ik de zwaardere optie: liever iets te veel rust dan te weinig. Een full-body training met squats telt dus als hard, en een lange zone-2 rit met een zwaar laatste uur ook.
 - Een lange training op lage hartslag waarvan een deel zwaar was telt als hard. Een lange rustige training zonder zwaar deel niet.
@@ -20,9 +22,11 @@ Dit zijn mijn eigen beslissingen. Ze bepalen het juiste antwoord in `test-set.md
 
 ## Herstel
 
-- **Onvoldoende:** ik blijf te lang last houden van mijn spieren (bijna altijd spierpijn), of mijn trainingen worden niet goed uitgevoerd omdat ik niet hersteld ben.
-- **Voldoende:** mijn trainingen lukken zoals gepland, zonder belemmering.
-- **Onzeker:** de notities zeggen er niets over.
+- **Onvoldoende** (sinds v7, milder dan v6): alleen als ik last blijf houden van mijn spieren op de dagen na een training (spierpijn, "benen kapot van zaterdag", "nog stijf van woensdag"), of als een training geschrapt, overgeslagen, afgebroken of niet afgemaakt wordt of niet lukt omdat ik moe ben, slecht sliep of niet hersteld ben.
+- **Geen signaal voor onvoldoende** (sinds v7): vermoeidheid tijdens een training die ik wel afmaak (zoals T03, T25), minder energie op één dag als ik toch train (zoals T04, T28), een training die ik bewust lichter doe omdat ik wat moe ben (zoals T01, T29), stijve benen die ik met een rustig loopje loslop (T14), pauzes bij het zwemmen door de ademhaling (T18), stoppen door het weer (T28).
+- **Voldoende:** mijn trainingen lukken zoals gepland, of er staat een positief signaal: "ging goed", "goeie training", "voelde sterk", "voelde fris", "voelde beter dan vorige keer", "herstel voelde goed", een herstelrun.
+- Staan er een signaal voor onvoldoende en een positief signaal, dan kies ik onvoldoende: liever iets te veel rust (sinds v6).
+- **Onzeker:** de notities bevatten geen enkel signaal over herstel.
 
 ## Advies voor volgende week
 
