@@ -101,8 +101,8 @@ Geen extra werk per week. Je doet de oefening van de week op je eigen tool.
 |---|---|
 | 2 | Taak kiezen. v1 draait. Vijf inputs met antwoord |
 | 3 | Context herschrijven: instructies, voorbeelden, bronnen. Tien inputs. Fouten classificeren. Eerste succespercentage |
-| 4 | Tokens per run. Context inkorten. Eén verbetering, opnieuw meten. Mens met chronometer ernaast |
-| 5 | Twee keer laten lopen: de foutmarge. Hield je verbetering stand? Goedkoper model proberen. Wat kost het aan 10× en 100× |
+| 4 | Tokens en kost per run: de context en jouw deel. Kost per maand bij je volume, ×10 en ×1.000. Tijd met de hand: een redenering met stappen en bron |
+| 5 | Drie runs per versie: de foutmarge. Hield je verbetering stand? Drie setups: Sonnet, Haiku, Opus. Je value chain met een bereik. Je testset groeit naar 30 inputs (set v2) |
 | 6 | Je tool documenten laten lezen |
 | 7 | Draaien op een tweede model |
 | 8 | Draaien op een model op je eigen laptop |

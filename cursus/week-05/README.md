@@ -1,4 +1,4 @@
-# Week 5: variatie, caching en modelkeuze
+# Week 5 — Variatie, caching en modelkeuze
 
 *Krijg ik twee keer hetzelfde antwoord?*
 
