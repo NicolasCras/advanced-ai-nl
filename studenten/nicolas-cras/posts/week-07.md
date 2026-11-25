@@ -16,7 +16,7 @@ Capstone-plek: Level UP Sportcoaching (25 sporters). Taak: de trainingsnotities 
 |  | Voor Level UP | Wat zit er vast? |
 |---|---|---|
 | **Build** | Mijn eigen Build, een taalmodel dat de notities leest en een oordeel en advies geeft. | Het is heel moeilijk om de AI de notities van de sporter goed te laten begrijpen en analyseren. |
-| **Connect** | Strava koppelen. De AI bekijkt de training via hartslag, duur en hartslagzones, zonder dat er een beschrijving bij moet staan. | De sporter heeft Strava Plus nodig. Eigen hartslagzones zijn een betaalde functie (support.strava.com, 25 november 2026), ongeveer $5 per maand in de VS, de prijs voor België moet ik nog controleren. Of een AI die zones via de koppeling kan ophalen, moet ik nog nagaan. |
+| **Connect** | Strava koppelen. De AI bekijkt de training via hartslag, duur en hartslagzones, zonder dat er een beschrijving bij moet staan. | De sporter heeft Strava Plus nodig. Eigen hartslagzones zijn een betaalde functie (support.strava.com, 25 november 2026). In België kost Strava €69,99 per jaar per persoon, of €34,99 voor een geverifieerde student (strava.com/pricing en strava.com/subscribe, 25 november 2026). Of een AI die zones via de koppeling kan ophalen, moet ik nog nagaan. |
 | **Buy** | Drie programma's, prijzen van 25 november 2026 voor 25 sporters: TrueCoach 136,99 USD per maand (Pro, truecoach.co/pricing), Athletica ongeveer 497,50 USD per maand (athletica.ai/pricing), Everfit 75 USD per maand (everfit.io/pricing). | Geen van de drie analyseert vrije notities zoals mijn Build. Geen enkele site zegt iets over data-export: dat moet ik aan support vragen. |
 
 **Mijn advies:** Connect. De informatie is correcter, want je baseert je op feiten, namelijk de hartslagzones van de sporter.
